@@ -7,6 +7,9 @@ thumbnail: /style/image/thumbnail.png
 icon: book
 ---
 
+* content
+{:toc}
+
 <input type="hidden" id="chapterNumber" name="theoremStart" value="1"/>
 <input type="hidden" id="theoremStart" value="1"/>
 
