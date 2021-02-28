@@ -13,9 +13,6 @@ icon: book
 <input type="hidden" id="chapterNumber" name="theoremStart" value="1"/>
 <input type="hidden" id="theoremStart" value="1"/>
 
-{% include bottomnav.html %}
-
-
 <article>
     <section>
         <header>
