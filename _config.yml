@@ -23,6 +23,8 @@ comments :
 collections:
   maa7:
     order: chapter
+    output: true
   maa8:
     order: chapter
+    output: true
 collections_dir: modules  
