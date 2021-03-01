@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Example Post
+title: Tilastolliset tunnusluvut
 date: 2019-01-01 00:00:00 +0800
 category: tutorial
 thumbnail: /style/image/thumbnail.png
@@ -13,7 +13,6 @@ icon: book
 <input type="hidden" id="chapterNumber" name="theoremStart" value="1"/>
 <input type="hidden" id="theoremStart" value="1"/>
 
-# Tilastolliset tunnusluvut
 ## Luvun tavoitteet
 Tämän luvun tavoitteena on, että pystyt xxxx. Osaat
 * xxxxx
