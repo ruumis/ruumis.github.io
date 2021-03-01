@@ -20,3 +20,9 @@ comments :
     repo : 
     owner : 
     admin : 
+collections:
+  maa7:
+    order: chapter
+  maa8:
+    order: chapter
+collections_dir: modules  
