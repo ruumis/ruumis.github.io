@@ -35,7 +35,7 @@ icon: book
   content: "\2212";
 }
 
-.content {
+.exercise-content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -79,28 +79,6 @@ Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. N
 * Mikä Aleksanterin tutkimuksessa on havaintoarvo?
 {% include exercise-end.html %}
 
-<h2>Animated Collapsibles</h2>
-
-<p>A Collapsible:</p>
-<button class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<p>Collapsible Set:</p>
-<button class="collapsible">Open Section 1</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 2</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -109,11 +87,11 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
+    if (content.style.display === "block") {
+      content.style.display = "none";
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
+      content.style.display = "block";
+    }
   });
 }
 </script>
