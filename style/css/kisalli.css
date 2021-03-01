@@ -157,6 +157,11 @@ ol.a ol li:last-child {margin-bottom:0;}
   background-color: #f1f1f1;
 }
 
+.collapsible:before  {
+  content: "Tehtävä "+ counter(exercise-counter) ": "; /* Apply counter before children's content. */
+  color: white;
+}
+
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
@@ -169,17 +174,11 @@ ol.a ol li:last-child {margin-bottom:0;}
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-#main-content {
+.main-content {
         counter-reset: exercise-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
 }
 
 .exercise button {
         counter-increment: exercise-counter 1;
-        position: relative;
 }
 
-.exercise button:before  {
-  content: "Tehtävä "+ counter(exercise-counter) ": "; /* Apply counter before children's content. */
-  position: absolute;
-  display: block;
-}
