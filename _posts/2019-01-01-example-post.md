@@ -143,24 +143,12 @@ Lapsiperheiden luokittelussa lasketaan, kuinka monessa perheessä, eli havaintoy
                        <em>Mahdollinen havaintoarvo</em> on arvo tai suure, johon jokin havaintoyksikkö voisi liittyä.
                     </p>
 			</div>
-			
-			<div class="tehtavat">
-                <div class="tehtava" id="38c3acd0-d55e-4923-bab0-2360a70eab5c">
-                    <header>
-                        <h1>                            <div class="checkbox-group"></div>
-                            <a data-toggle="collapse" class="collapsed" data-target="#MAA8t100ab">
-                                Mahdollinen havaintoarvo: kotipihan linnut (jatkoa)
-                            </a>
-                        </h1>
-                    </header>
-                    <div id="MAA8t100ab" class="collapse">
-                        <p>
-                            Aleksanteri jatkaa linnunpönttöjen tutkimista tutkimalla myös naapurien linnunpöntöt.
-						</p>
-						<ol class="a">
-                            <li>Anna esimerkki lintulajista, joka on mielekäs mahdollinen havaintoarvo</li>
-                            <li>Anna esimerkki lintulajista, joka ei ole mielekäs mahdollinen havaintoarvo.</li>
-                        </ol>
+{% include exercise-start.html id="test" header="Mahdollinen havaintoarvo: kotipihan linnut (jatkoa)" %}
+Aleksanteri jatkaa linnunpönttöjen tutkimista tutkimalla myös naapurien linnunpöntöt.
+* Anna esimerkki lintulajista, joka on mielekäs mahdollinen havaintoarvo
+* Anna esimerkki lintulajista, joka ei ole mielekäs mahdollinen havaintoarvo.
+{% include exercise-end.html %}
+
                         <h2>
                             <a data-toggle="collapse" class="collapsed" data-target="#MAA8t100ab_v">
                                 VASTAUS
