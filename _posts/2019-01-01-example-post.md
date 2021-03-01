@@ -28,8 +28,12 @@ Kiinnistava aloitus tilastojen merkityksestä yhteiskunnassa esim. korona.
 Tässä luvussa tutkitaan Suomessa asuvia lapsiperheitä, joissa on alle 18-vuotiaita lapsia. Lapsiperheitä koskevat tiedot on poimittu <a href="https://www.stat.fi/">Tilastokeskuksen sivulta</a>. Tämä lähestyminen seuraa <a href="http://yle.fi/plus/abitreenit/2020/kevat/2020-03-18_N_fi/index.html#6">kevään 2020 lyhyen matematiikan ylioppilaskokeen tehtävää 6</a>.
 
 Tutkimista varten määritellään muutamia tilastotieteen keskeisiä käsitteitä.
-### MÄÄRITELMÄ: HAVAINTOYKSIKKÖ JA HAVAINTOARVO
-Tutkittavan joukon alkioita kutsutaan <em>havaintoyksiköiksi</em>. Havaintoyksikköön liittyvää arvoa tai suuretta kutsutaan <em>havaintoarvoksi</em>					
+
+{% include definition-start.html %}
+### Havaintoyksikkö ja havaintoarvo
+Tutkittavan joukon alkioita kutsutaan <em>havaintoyksiköiksi</em>. Havaintoyksikköön liittyvää arvoa tai suuretta kutsutaan <em>havaintoarvoksi</em>.
+{% include definition-end.html %}
+
 Tässä tutkittava joukko on Suomessa asuvat lapsiperheet, joissa on alle 18-vuotiaita lapsia. Jokainen perhe on havaintoyksikkö ja perheen alle 18-vuotiaiden lasten lukumäärä on havaintoarvo. 
 
 ### Havaintoyksikkö ja havaintoarvo: kotipihan linnut
