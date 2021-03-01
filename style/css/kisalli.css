@@ -175,8 +175,11 @@ ol.a ol li:last-child {margin-bottom:0;}
 
 .exercise button {
         counter-increment: exercise-counter 1;
+        position: relative;
 }
 
 .exercise button:before  {
   content: "Tehtävä "+ counter(exercise-counter) ": "; /* Apply counter before children's content. */
+  position: absolute;
+  display: block;
 }
