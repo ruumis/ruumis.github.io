@@ -47,9 +47,7 @@ icon: book
 * content
 {:toc}
 
-<input type="hidden" id="chapterNumber" name="theoremStart" value="1"/>
-<input type="hidden" id="theoremStart" value="1"/>
-
+# Tilastolliset tunnusluvut
 ## Luvun tavoitteet
 Tämän luvun tavoitteena on, että pystyt xxxx. Osaat
 * xxxxx
