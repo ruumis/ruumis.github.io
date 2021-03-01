@@ -168,3 +168,15 @@ ol.a ol li:last-child {margin-bottom:0;}
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+#main-content {
+        counter-reset: exercise-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
+}
+
+.exercise button {
+        counter-increment: exercise-counter 1;
+}
+
+.exercise button {
+  content: "Tehtävä "+ counter(exercise-counter) ": "; /* Apply counter before children's content. */
+}
