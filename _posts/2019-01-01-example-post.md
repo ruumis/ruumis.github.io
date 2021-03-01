@@ -13,133 +13,43 @@ icon: book
 <input type="hidden" id="chapterNumber" name="theoremStart" value="1"/>
 <input type="hidden" id="theoremStart" value="1"/>
 
-<article>
-    <section>
-        <header>
-            <h1>Tilastolliset tunnusluvut</h1>
-        </header>
-    </section>
-    <section class="panel">
-        <header>
-            <h1>
-                <a data-toggle="collapse" class="collapsed" data-target="#MAA8luvun1-tavoitteet">
-                    Luvun tavoitteet
-                </a>
-            </h1>
-        </header>
-        <div id="MAA8luvun1-tavoitteet" class="collapse">
+# Tilastolliset tunnusluvut
+## Luvun tavoitteet
+Tämän luvun tavoitteena on, että pystyt xxxx. Osaat
+* xxxxx
+* xxxxx
+* xxxxx
+* xxxxx
+* xxxxx
+* xxxxx
+* xxxxx
+## Frekvenssi
+Kiinnistava aloitus tilastojen merkityksestä yhteiskunnassa esim. korona.
 
-            <div class="objective">
-                <p> 
-                    Tämän luvun tavoitteena on, että pystyt xxxx. Osaat
-                </p>
-                <ul>
-                    <li> 
-                        xxxxx
-                    </li>
-                    <li>
-                        xxxxx
-                    </li>
-                    <li>
-                        xxxxx.
-                    </li>
-                </ul> 
-            </div>
-            <div class="close-section">
-                <a data-toggle="collapse" class="collapsed" data-target="#MAA8luvun1-tavoitteet">
-                    Sulje kappale
-                </a>
-            </div>
-        </div>
-    </section>
+Tässä luvussa tutkitaan Suomessa asuvia lapsiperheitä, joissa on alle 18-vuotiaita lapsia. Lapsiperheitä koskevat tiedot on poimittu <a href="https://www.stat.fi/">Tilastokeskuksen sivulta</a>. Tämä lähestyminen seuraa <a href="http://yle.fi/plus/abitreenit/2020/kevat/2020-03-18_N_fi/index.html#6">kevään 2020 lyhyen matematiikan ylioppilaskokeen tehtävää 6</a>.
 
-    <section class="panel">
-        <header class="otsikko">
-            <h1>      
-                <a data-toggle="collapse" class="collapsed" data-target="#frekvenssi">
-                    Frekvenssi
-                </a>
-            </h1>
-        </header>
-        <div id="frekvenssi" class="collapse">
-            
-            <div class="teoria">
-				<p>
-					Kiinnistava aloitus tilastojen merkityksestä yhteiskunnassa esim. korona.
-				</p>
-				<p>
-					Tässä luvussa tutkitaan Suomessa asuvia lapsiperheitä, joissa on alle 18-vuotiaita lapsia. Lapsiperheitä koskevat tiedot on poimittu <a href="https://www.stat.fi/">Tilastokeskuksen sivulta</a>. Tämä lähestyminen seuraa <a href="http://yle.fi/plus/abitreenit/2020/kevat/2020-03-18_N_fi/index.html#6">kevään 2020 lyhyen matematiikan ylioppilaskokeen tehtävää 6</a>.
-				</p>
-				<p>
-					Tutkimista varten määritellään muutamia tilastotieteen keskeisiä käsitteitä.
-				</p>
-			</div>
-			
-			<div class="definition">
-                    <h3>MÄÄRITELMÄ: HAVAINTOYKSIKKÖ JA HAVAINTOARVO</h3>
-                    <p>
-                        Tutkittavan joukon alkioita kutsutaan <em>havaintoyksiköiksi</em>. Havaintoyksikköön liittyvää arvoa tai suuretta kutsutaan <em>havaintoarvoksi</em>.
-                    </p>
-            </div>
-			
-			<div class="teoria">
-				<p>
-					Tässä tutkittava joukko on Suomessa asuvat lapsiperheet, joissa on alle 18-vuotiaita lapsia. Jokainen perhe on havaintoyksikkö ja perheen alle 18-vuotiaiden lasten lukumäärä on havaintoarvo. 
-                </p>
-            </div>
-			
+Tutkimista varten määritellään muutamia tilastotieteen keskeisiä käsitteitä.
+### MÄÄRITELMÄ: HAVAINTOYKSIKKÖ JA HAVAINTOARVO
+Tutkittavan joukon alkioita kutsutaan <em>havaintoyksiköiksi</em>. Havaintoyksikköön liittyvää arvoa tai suuretta kutsutaan <em>havaintoarvoksi</em>					
+Tässä tutkittava joukko on Suomessa asuvat lapsiperheet, joissa on alle 18-vuotiaita lapsia. Jokainen perhe on havaintoyksikkö ja perheen alle 18-vuotiaiden lasten lukumäärä on havaintoarvo. 
 
-			
-			<div class="tehtavat">
-                <div class="tehtava" id="38c3acd0-d55e-4923-bab0-2360a70eab5c">
-                    <header>
-                        <h1>                            <div class="checkbox-group"></div>
-                            <a data-toggle="collapse" class="collapsed" data-target="#MAA8t100">
-                                Havaintoyksikkö ja havaintoarvo: kotipihan linnut
-                            </a>
-                        </h1>
-                    </header>
-                    <div id="MAA8t100" class="collapse">
-                        <p>
-                            Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. Niissä pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen.
-						</p>
-						<ol class="a">
-                            <li>Mikä Aleksanterin tutkimuksessa on havaintoyksikkö?</li>
-                            <li>Mikä Aleksanterin tutkimuksessa on havaintoarvo?</li>
-                        </ol>
-                        <h2>
-                            <a data-toggle="collapse" class="collapsed" data-target="#MAA8t100_v">
-                                VASTAUS
-                            </a>
-                        </h2>
-                        <div id="MAA8t100_v" class="collapse">
-                           <ol class="a">
-                                <li>Linnunpöntöt ovat havaintoyksiköitä, niitä on kuusi kappaletta.</li>
-                                <li>Jokaiseen havaintoyksikköön liittyy suure, joka on linnun laji. Linnun laji on siis havaintoarvo.</li>
-                            </ol>
-                        </div>
-					</div>	
-				</div>
-			</div>
-			
-			<div class="teoria">
-				<h3><a data-toggle="collapse" class="collapsed" data-target="#lisa_1">Lisätieto: Tilastollinen muuttuja</a></h3>
-                <div id="lisa_1" class="collapse">
-					<p>
-                       <em>Tilastolliseksi muuttujaksi</em> kutsutaan funktiota, joka kuvaa jokaisen havaintoyksikön sitä vastaavalle havaintoarvolle. Kommentti: nyt tämä on irrallinen; joko lisää tietoa tai pois.
-                    </p>
-				</div>
-                <p>
-                    Tässä moduulissa tutustutaan vain tilanteisiin, joissa havaintoarvoja on äärellinen määrä tai joissa havaintoarvot voidaan numeroida luonnollisilla luvuilla. Tällaisia tilanteita kutsutaan <em>diskreeteiksi</em>. Jos tutkittava ominaisuus voi saada mitä tahansa reaalilukuarvoja jollakin välillä, kuten koulun oppilaiden pituudet, ei kyse ole diskreetistä tilanteesta. Näitä tilanteita tutkitaan moduulissa MAA12.
-                </p>
-				
-				<p>
-                    Jos joukossa on vähän havaintoyksiköitä, niin havaintoarvot voi esittää luettelemalle ne peräkkäin. Jos havaintoyksiköitä on paljon, niin havaintoarvojen luetteleminen on epäkäytännöllistä ja epähavainnollista. Tällöin havaintoyksiköt pitää <em>luokitella</em>. Luokittelussa lasketaan, kuinka moni havaintoyksikkö vastaa kutakin havaintoarvoa. Jos havaintoarvoja on hyvin paljon, täytyy ne ensin luokitella sopiviin luokkiin ennen havaintoyksikköjen laskemista.
-				</p>
-				<p>
-                    Lapsiperheiden luokittelussa lasketaan, kuinka monessa perheessä, eli havaintoyksikössä, on yksi lapsi (havaintoarvo 1), kuinka monessa on kaksi lasta (havaintoarvo 2), jne. Tiedot on koottu alla olevaan taulukoon:
-                </p>
-								
+### Havaintoyksikkö ja havaintoarvo: kotipihan linnut
+Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. Niissä pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen.
+* Mikä Aleksanterin tutkimuksessa on havaintoyksikkö?
+* Mikä Aleksanterin tutkimuksessa on havaintoarvo?
+
+#### VASTAUS
+* Linnunpöntöt ovat havaintoyksiköitä, niitä on kuusi kappaletta.
+* Jokaiseen havaintoyksikköön liittyy suure, joka on linnun laji. Linnun laji on siis havaintoarvo.
+
+### Lisätieto: Tilastollinen muuttuja
+<em>Tilastolliseksi muuttujaksi</em> kutsutaan funktiota, joka kuvaa jokaisen havaintoyksikön sitä vastaavalle havaintoarvolle. Kommentti: nyt tämä on irrallinen; joko lisää tietoa tai pois.
+
+Tässä moduulissa tutustutaan vain tilanteisiin, joissa havaintoarvoja on äärellinen määrä tai joissa havaintoarvot voidaan numeroida luonnollisilla luvuilla. Tällaisia tilanteita kutsutaan <em>diskreeteiksi</em>. Jos tutkittava ominaisuus voi saada mitä tahansa reaalilukuarvoja jollakin välillä, kuten koulun oppilaiden pituudet, ei kyse ole diskreetistä tilanteesta. Näitä tilanteita tutkitaan moduulissa MAA12.
+
+Jos joukossa on vähän havaintoyksiköitä, niin havaintoarvot voi esittää luettelemalle ne peräkkäin. Jos havaintoyksiköitä on paljon, niin havaintoarvojen luetteleminen on epäkäytännöllistä ja epähavainnollista. Tällöin havaintoyksiköt pitää <em>luokitella</em>. Luokittelussa lasketaan, kuinka moni havaintoyksikkö vastaa kutakin havaintoarvoa. Jos havaintoarvoja on hyvin paljon, täytyy ne ensin luokitella sopiviin luokkiin ennen havaintoyksikköjen laskemista.
+
+Lapsiperheiden luokittelussa lasketaan, kuinka monessa perheessä, eli havaintoyksikössä, on yksi lapsi (havaintoarvo 1), kuinka monessa on kaksi lasta (havaintoarvo 2), jne. Tiedot on koottu alla olevaan taulukoon:
 				<table style="margin-left: auto; margin-right: auto;">
 											
 						<tr>
@@ -608,13 +518,6 @@ icon: book
 					</p>
             </div>
 			
-            <div class="close-section">
-                <a data-toggle="collapse" class="collapsed" data-target="#frekvenssi">
-                    Sulje kappale
-                </a>
-            </div>
-        </div>
-    </section>
 	
 	<section class="panel">
         <header class="otsikko">
@@ -2521,4 +2424,3 @@ icon: book
         </div>
     </section>
 
-</article>
