@@ -1,10 +1,4 @@
-<div class="exercise" id="{{include.id}}">
-                <header>
-                    <h3>                            <div class="checkbox-group"></div>
-                        <a data-toggle="collapse" class="collapsed" data-target="#{{include.id}}-t">
-                            {{include.header}}
-                        </a>
-                    </h3>
-                </header>
-                <div id="{{include.id}}-t" class="collapse" markdown="1">
-    
+<button type="button" class="collapsible" id="{{include.id}}>{{include.header}}</button>
+<div class="content" markdown="1">
+  <p>Lorem ipsum...</p>
+</div>
