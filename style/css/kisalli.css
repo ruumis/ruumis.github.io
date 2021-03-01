@@ -150,7 +150,7 @@ ol.a ol li:last-child {margin-bottom:0;}
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
+.exercise {
   padding: 0 18px;
   display: none;
   overflow: hidden;
