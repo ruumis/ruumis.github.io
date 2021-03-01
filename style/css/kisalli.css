@@ -177,6 +177,6 @@ ol.a ol li:last-child {margin-bottom:0;}
         counter-increment: exercise-counter 1;
 }
 
-.exercise button {
+.exercise button:before  {
   content: "Tehtävä "+ counter(exercise-counter) ": "; /* Apply counter before children's content. */
 }
