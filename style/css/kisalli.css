@@ -157,7 +157,7 @@ ol.a ol li:last-child {margin-bottom:0;}
   background-color: #f1f1f1;
 }
 
-.collapsible:before  {
+.collapsible:before {
   content: "Tehtävä "+ counter(exercise-counter) ": "; /* Apply counter before children's content. */
   color: white;
 }
