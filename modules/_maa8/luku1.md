@@ -36,4 +36,15 @@ Tutkittavan joukon alkioita kutsutaan <em>havaintoyksiköiksi</em>. Havaintoyksi
 
 Tässä tutkittava joukko on Suomessa asuvat lapsiperheet, joissa on alle 18-vuotiaita lapsia. Jokainen perhe on havaintoyksikkö ja perheen alle 18-vuotiaiden lasten lukumäärä on havaintoarvo. 
 
-{% include exercise.html id="test1" header="Havaintoyksikkö ja havaintoarvo: kotipihan linnut" content="Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. Niissä pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen.Mikä Aleksanterin tutkimuksessa on havaintoyksikkö? Mikä Aleksanterin tutkimuksessa on havaintoarvo?" answer="Linnunpöntöt ovat havaintoyksiköitä, niitä on kuusi kappaletta. Jokaiseen havaintoyksikköön liittyy suure, joka on linnun laji. Linnun laji on siis havaintoarvo." %}
+{% include exercise.html 
+  id="test1" 
+  header="Havaintoyksikkö ja havaintoarvo: kotipihan linnut" 
+  content="
+Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. Niissä pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen.
+* Mikä Aleksanterin tutkimuksessa on havaintoyksikkö? 
+* Mikä Aleksanterin tutkimuksessa on havaintoarvo?
+  " 
+  answer="
+* Linnunpöntöt ovat havaintoyksiköitä, niitä on kuusi kappaletta. 
+* Jokaiseen havaintoyksikköön liittyy suure, joka on linnun laji. Linnun laji on siis havaintoarvo.
+  " %}
