@@ -133,7 +133,7 @@ ol.a ol li:last-child {margin-bottom:0;}
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.exercise > .active, .exercise-button:hover {
   background-color: #555;
 }
 
@@ -144,6 +144,13 @@ ol.a ol li:last-child {margin-bottom:0;}
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+.exercise-content {
+     background-color: #f1f1f1;
+}
+.exercise-answer {
+  background-color: white;
 }
 
 .exercise-button:before {
