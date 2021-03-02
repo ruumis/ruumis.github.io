@@ -1,22 +1,3 @@
-section.panel > header {
-        display: block;
-        background-color: white;
-        padding-top: 0;
-    }
-
-    article {
-        padding: 10px 0px 0 0;
-    }
-
-    main.has-atop article {
-        background-color: transparent;
-    }
-
-section img {
-  margin: auto;
-  display: block;
-}
-
 .objective,
 .tool {
 display: block; 
@@ -186,3 +167,26 @@ ol.a ol li:last-child {margin-bottom:0;}
         counter-increment: exercise-counter 1;
 }
 
+.module-navigation {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.module-navigation a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.module-navigation a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.module-navigation a.active {
+  background-color: #4CAF50;
+  color: white;
+}
