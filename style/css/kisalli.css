@@ -169,20 +169,20 @@ ol.a ol li:last-child {margin-bottom:0;}
 
 .module-navigation {
   overflow: hidden;
-  background-color: #333;
+  background-color: #aaa;
 }
 
 .module-navigation a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .module-navigation a:hover {
-  background-color: #ddd;
+  background-color: #bbb;
   color: black;
 }
 
