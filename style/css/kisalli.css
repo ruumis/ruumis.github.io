@@ -173,12 +173,11 @@ ol.a ol li:last-child {margin-bottom:0;}
 
 .module-navigation {
   overflow: hidden;
-  background-color: #aaa;
 }
 
 .module-navigation a {
   float: left;
-  color: white;
+  color: grey;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -186,11 +185,9 @@ ol.a ol li:last-child {margin-bottom:0;}
 }
 
 .module-navigation a:hover {
-  background-color: #bbb;
-  color: black;
+  border-bottom: 1px solid #bbb;
 }
 
 .module-navigation a.active {
-  background-color: #4CAF50;
-  color: white;
+  border-bottom: 1px solid #4CAF50;
 }
