@@ -34,6 +34,10 @@ background-color: #ECF5D4;
 background-color: #FBE127;
 }
 
+post-content h1::before, .post-content h2::before, .post-content h3::before, .post-content h4::before, .post-content h5::before, .post-content h6::before {
+    content: '';
+}
+
 .definition {
 background-color: #f2ffcc;
 display: block; 
