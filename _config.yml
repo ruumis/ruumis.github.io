@@ -12,6 +12,8 @@ paginate_path: "/page/:num/"
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 highlighter: rouge
 markdown: kramdown
+kramdown: 
+  toc_levels: "2,3" 
 comments :
   gitalk :
     clientID : 
