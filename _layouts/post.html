@@ -8,9 +8,11 @@ layout: default
             {{ page.title }}
         </h1>
         <div class="post-data">
-            		{% for page in site[page.collection] %}
-			<a href="{{ page.url }}">{{ page.title }}</a>
-			{% endfor %}
+		<ul class="module-navigation">
+            	{% for page in site[page.collection] %}
+		<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+		{% endfor %}
+		</ul>
         </div>
     </div>
 </article>
