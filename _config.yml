@@ -5,11 +5,12 @@ baseurl:
 resume_site: 
 description: 
 github_username: 
-github: 
+github: https://github.com/kisallioppiminen/ 
 plugins: [jekyll-paginate]
 paginate: 12
 paginate_path: "/page/:num/"
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+facebook: https://www.facebook.com/groups/899303056853769/
 highlighter: rouge
 markdown: kramdown
 kramdown: 
