@@ -1,14 +1,14 @@
 <div class="exercise" id="{{include.id}}">
 <button type="button" class="collapsible exercise-button">{{include.header}}</button>
-<div class="exercise-content" markdown="0">
-  <div markdown="1">
+<div class="exercise-content">
+  <span>
     {{include.content}}
-  </div>  
+  </span>  
   {% if include.answer %}
     <button type="button" class="collapsible answer-button" markdown="0">Vastaus</button>
-    <div class="exercise-answer" markdown="1">
+    <span class="exercise-answer">
       {{include.answer}}
-    </div>
+    </span>
   {% endif %}
 </div>
 </div>
