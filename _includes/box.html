@@ -7,7 +7,7 @@
   {% if include.type == "theorem" %}
   <span class="theorem-number">Lause </span>: {{include.header}}
   {% elsif include.type == "definition" %}
-  <span class="definition-number">Määritelmä {% if page.chapter %}{{ page.chapter }}{% endif %}</span>: {{include.header}}
+  <span class="definition-number">Määritelmä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: {{include.header}}
   {% else %}
   <span class="include.type">{{include.header}}
   {% endif %}
