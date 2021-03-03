@@ -27,8 +27,8 @@ collections:
     order: chapter
     output: true
     permalink: /:collection/:name
-  maa8:
+  Tilastot ja todennäköisyys (MAA8):
     order: chapter
     output: true
-    permalink: /:collection/:name
+    permalink: /maa8/:name
 collections_dir: modules  
