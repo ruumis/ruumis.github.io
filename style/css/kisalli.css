@@ -1,5 +1,10 @@
 /* Override body*/
-body.bg-grey post-content h1::before, body .post-content h2::before, body .post-content h3::before, body .post-content h4::before, body .post-content h5::before, body .post-content h6::before {
+body.bg-grey post-content h1::before, 
+body.bg-grey .post-content h2::before, 
+body.bg-grey .post-content h3::before, 
+body.bg-grey .post-content h4::before, 
+body.bg-grey .post-content h5::before, 
+body.bg-grey .post-content h6::before {
     content: '';
 }
 
