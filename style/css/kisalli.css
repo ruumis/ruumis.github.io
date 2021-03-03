@@ -1,3 +1,7 @@
+.icon-facebook:before {
+  content: "\f09a";
+}
+
 /* Override body*/
 body.bg-grey .post-content h1::before, 
 body.bg-grey .post-content h2::before, 
