@@ -6,6 +6,7 @@ category: tutorial
 thumbnail: /style/image/thumbnail.png
 icon: book
 chapter: 1
+module: Tilastot ja todennäköisyys (MAA8)
 ---
 
 * content
