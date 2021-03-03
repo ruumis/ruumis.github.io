@@ -128,7 +128,6 @@ ol.a ol li:last-child {margin-bottom:0;}
       cursor: pointer;
 }
 
-.exercise-button,
 .box-button {
   background-color: #777;
   color: white;
@@ -140,7 +139,6 @@ ol.a ol li:last-child {margin-bottom:0;}
   font-size: 15px;
 }
 
-.answer-button,
 .box-extra-button {
   background-color: white;
   color: black;
@@ -160,27 +158,23 @@ ol.a ol li:last-child {margin-bottom:0;}
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.exercise-content,
-.exercise-answer,
 .box-content,
 .box-extra-content {
   padding: 0px 18px 18px 18px;
   display: none;
   overflow: hidden;
 }
-
-.exercise-answer,
 .box-extra-content {
   background-color: white;
 }
 
-.exercise-button::before {
-  content: "Tehtävä " counter(exercise-counter) ": "; /* Apply counter before children's content. */
+.exercise-number::after {
+  content: counter(exercise-counter); /* Apply counter before children's content. */
   color: white;
 }
 
-.exercise-number:after {
-  content: counter(exercise-counter); /* Apply counter before children's content. */
+.box-number::after {
+  content: counter(box-counter); /* Apply counter before children's content. */
   color: white;
 }
 
@@ -198,11 +192,15 @@ ol.a ol li:last-child {margin-bottom:0;}
 
 .main-content {
         counter-reset: exercise-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
+        counter-reset: box-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
 }
 
-.exercise button,
 .box-button {
         counter-increment: exercise-counter 1;
+}
+
+.box-header {
+        counter-increment: box-counter 1;
 }
 
 .module-navigation {
