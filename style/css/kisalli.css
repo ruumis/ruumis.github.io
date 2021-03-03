@@ -185,8 +185,13 @@ ol.a ol li:last-child {margin-bottom:0;}
   background-color: white;
 }
 
-.exercise-button:before {
+.exercise-button::before {
   content: "Tehtävä " counter(exercise-counter) ": "; /* Apply counter before children's content. */
+  color: white;
+}
+
+.exercise-number:after {
+  content: counter(exercise-counter); /* Apply counter before children's content. */
   color: white;
 }
 
@@ -206,7 +211,8 @@ ol.a ol li:last-child {margin-bottom:0;}
         counter-reset: exercise-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
 }
 
-.exercise button {
+.exercise button,
+.box-button {
         counter-increment: exercise-counter 1;
 }
 
