@@ -48,3 +48,19 @@ Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. N
 * Linnunpöntöt ovat havaintoyksiköitä, niitä on kuusi kappaletta. 
 * Jokaiseen havaintoyksikköön liittyy suure, joka on linnun laji. Linnun laji on siis havaintoarvo.
   " %}
+  
+  {% include box.html 
+  id="test2" 
+  type="exercise"
+  header="Havaintoyksikkö ja havaintoarvo: kotipihan linnut" 
+  box-content="
+Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. Niissä pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen.
+* Mikä Aleksanterin tutkimuksessa on havaintoyksikkö? 
+* Mikä Aleksanterin tutkimuksessa on havaintoarvo?
+  " 
+  box-extra="
+* Linnunpöntöt ovat havaintoyksiköitä, niitä on kuusi kappaletta. 
+* Jokaiseen havaintoyksikköön liittyy suure, joka on linnun laji. Linnun laji on siis havaintoarvo.
+  " %}
+  
+  
