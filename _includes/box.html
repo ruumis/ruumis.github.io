@@ -1,5 +1,5 @@
 <div class="{{include.type}}" id="{{include.id}}">
-{% if include.type === exercise %}
+{% if include.type == "exercise" %}
 <button type="button" class="collapsible box-button"><span class="exercise-number">Tehtävä</span>: {{include.header}}</button>
 {% endif %}
 <div class="box-content">
@@ -8,9 +8,9 @@
 </div>  
 {% if include.box-extra %}
 <button type="button" class="collapsible box-extra-button">
-{% if include.type === exercise %}
+{% if include.type == "exercise" %}
 Vastaus
-{% elsif include.type === theorem %}
+{% elsif include.type == "theorem" %}
 Todistus
 {% endif %}
 </button>
