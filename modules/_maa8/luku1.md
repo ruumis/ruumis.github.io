@@ -22,6 +22,7 @@ Tämän luvun tavoitteena on, että pystyt xxxx. Osaat
 * xxxxx
 * xxxxx
 * xxxxx
+
 ## Frekvenssi
 Kiinnistava aloitus tilastojen merkityksestä yhteiskunnassa esim. korona.
 
