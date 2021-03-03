@@ -168,11 +168,6 @@ ol.a ol li:last-child {margin-bottom:0;}
   overflow: hidden;
 }
 
-.exercise-content,
-.box-content {
-     background-color: #f1f1f1;
-}
-
 .exercise-answer,
 .box-extra-content {
   background-color: white;
