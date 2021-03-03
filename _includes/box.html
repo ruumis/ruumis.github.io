@@ -1,11 +1,11 @@
 <div class="{{include.type}}" id="{{include.id}}">
 {% if include.type == "exercise" %}
-<button type="button" class="collapsible box-button"><span class="exercise-number">Tehtävä </span>: {{include.header}}</button>
+<button type="button" class="collapsible box-button"><span class="exercise-number">Tehtävä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: {{include.header}}</button>
 <div class="box-content">
 {% else %}
 <h3 class="box-header">
   {% if include.type == "theorem" %}
-  <span class="theorem-number">Lause </span>: {{include.header}}
+  <span class="theorem-number">Lause {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: {{include.header}}
   {% elsif include.type == "definition" %}
   <span class="definition-number">Määritelmä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: {{include.header}}
   {% else %}
