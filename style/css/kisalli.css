@@ -21,11 +21,13 @@ body.bg-grey,
     color: #eee;
     font-size: 15px;
     font-weight: 600;
+    border: 1px solid transparent;
 }
 .item-desc a:active,
 .item-desc a:focus,
 .item-desc a:hover{
     color: white;
+    border: 1px solid white;
 }
 
 .objective,
