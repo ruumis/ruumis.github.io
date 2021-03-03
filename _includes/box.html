@@ -5,12 +5,11 @@
 {% else %}
 <h3 class="box-header">
   {% if include.type == "theorem" %}
-  <span class="theorem-number">Lause {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: {{include.header}}
+  <span class="box-number">Lause {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
   {% elsif include.type == "definition" %}
-  <span class="definition-number">Määritelmä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: {{include.header}}
-  {% else %}
-  <span class="include.type">{{include.header}}
+  <span class="box-number">Määritelmä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
   {% endif %}
+  {{include.header}}
 </h3>  
 <div class="box-content" style="display: block;">
 {% endif %}
