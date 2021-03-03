@@ -166,8 +166,7 @@ ol.a ol li:last-child {margin-bottom:0;}
 .exercise-content,
 .exercise-answer,
 .box-content,
-.box-extra-content,
-{
+.box-extra-content {
   padding: 0px 18px 18px 18px;
   display: none;
   overflow: hidden;
@@ -175,13 +174,12 @@ ol.a ol li:last-child {margin-bottom:0;}
 }
 
 .exercise-content,
-.box-content
-{
+.box-content {
      background-color: #f1f1f1;
 }
+
 .exercise-answer,
-.box-extra-content
-{
+.box-extra-content {
   background-color: white;
 }
 
