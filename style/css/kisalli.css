@@ -29,31 +29,11 @@ background-color: #ECF5D4;
 background-color: #FBE127;
 }
 
+.exercise { 
+    background-color: #f1f1f1;
+}
 .definition {
-background-color: #f2ffcc;
-display: block; 
-max-width: 94%; 
-width: auto; 
-height: auto; 
-margin: 10px auto;
-}
-
-.definition h3 {
-margin: 0; 
-width: auto; 
-height: auto; 
-background-color: #86b300; 
-color: #fff; 
-padding: 10px 20px;
-}
-
-.definition p {
-display: block; 
-width: auto; 
-height: auto; 
-padding: 15px 20px 5px 20px; 
-margin-bottom: 1em; 
-margin-top: 0;
+    background-color: #f2ffcc;
 }
 
 .theorem {
@@ -170,7 +150,6 @@ ol.a ol li:last-child {margin-bottom:0;}
   padding: 0px 18px 18px 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
 }
 
 .exercise-content,
