@@ -29,6 +29,14 @@ Tässä luvussa tutkitaan Suomessa asuvia lapsiperheitä, joissa on alle 18-vuot
 
 Tutkimista varten määritellään muutamia tilastotieteen keskeisiä käsitteitä.
 
+
+{% include box.html 
+type="definition"
+header="Havaintoyksikkö ja havaintoarvo" 
+content="
+Tutkittavan joukon alkioita kutsutaan *havaintoyksiköiksi*. Havaintoyksikköön liittyvää arvoa tai suuretta kutsutaan *havaintoarvoksi*.
+" %}
+
 {% include definition-start.html %}
 ### Havaintoyksikkö ja havaintoarvo
 Tutkittavan joukon alkioita kutsutaan <em>havaintoyksiköiksi</em>. Havaintoyksikköön liittyvää arvoa tai suuretta kutsutaan <em>havaintoarvoksi</em>.
