@@ -1,5 +1,5 @@
 .icon-facebook:before {
-  content: "\f09a";
+  content: '\f09a';
 }
 
 /* Override body*/
@@ -22,7 +22,9 @@ body.bg-grey,
     font-size: 15px;
     font-weight: 600;
 }
-.item-desc a:hover {
+.item-desc a:active,
+.item-desc a:focus,
+.item-desc a:hover{
     color: white;
 }
 
