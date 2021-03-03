@@ -24,12 +24,12 @@ comments :
     admin : 
 collections:
   maa7:
-    label: Trigonometriset funktiot (MAA7) 
+    name: Trigonometriset funktiot (MAA7) 
     order: chapter
     output: true
     permalink: /:collection/:name
   maa8:
-    label: Tilastot ja todennäköisyys (MAA8)
+    name: Tilastot ja todennäköisyys (MAA8)
     order: chapter
     output: true
     permalink: /:collection/:name
