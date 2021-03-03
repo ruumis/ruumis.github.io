@@ -1,7 +1,7 @@
 <div class="{{include.type}}" id="{{include.id}}">
 {% if include.type == "exercise" %}
 <button type="button" class="collapsible box-button"><span class="exercise-number">Tehtävä </span>: {{include.header}}</button>
-{% else}
+{% else %}
 <h3 class="box-header">
   {% if include.type == "theorem" %}
   <span class="theorem-number">Lause </span>: {{include.header}}
