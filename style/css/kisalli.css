@@ -39,18 +39,19 @@ padding: 35px;
 margin: -15px;
 }
 
-.box-header {
-    font-weight: 100;
-    text-transform: uppercase;
-    color: white;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+.box-button {
+        counter-increment: exercise-counter 1;
 }
 
+.box-header {
+	background-color: #a67d00;
+	counter-increment: box-counter 1;
+}
+
+.box {
+	background-color: #ffdd73;
+}
+	
 .objective {
 background-color: #ECF5D4;
 }
@@ -71,46 +72,26 @@ background-color: #FBE127;
 }
 
 .theorem {
-  display: block; 
-  max-width: 94%; 
-  width: auto; 
-  height: auto; 
-  margin: 10px auto; 
-  background-color: #CCCCCC;
+  background-color: #7673d9;
 }
 
-.theorem h3 {
-  margin: 0; 
-  width: auto; 
-  height: auto; 
-  background-color: #737373; 
-  color: #fff; 
-  padding: 10px 20px;
-  }
-.theorem p {
-  display: block; 
-  width: auto; 
-  height: auto; 
-  padding: 20px; 
-  margin-bottom: 0; 
-  margin-top: 0;
-}
-.theorem .proof {
-  display: block; 
-  width: auto; 
-  height: auto; 
-  padding: 5px 10px 10px 10px; 
-  margin-bottom: 1em; 
-  margin-top: 0; 
-  background-color: #E6E6E6;
+.theorem .box-header {
+    background-color: #0c0874; 
 }
 
-.theorem p + ul,
-.theorem p + ol,
-.definition p + ul,
-.definition p + ol {
-        margin-top: -20px;
+.box-header {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
 }
+
+
 
 ol.a {
     list-style-type: none;
@@ -214,14 +195,6 @@ ol.a ol li:last-child {margin-bottom:0;}
 .main-content {
         counter-reset: exercise-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
         counter-reset: box-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
-}
-
-.box-button {
-        counter-increment: exercise-counter 1;
-}
-
-.box-header {
-        counter-increment: box-counter 1;
 }
 
 .module-navigation {

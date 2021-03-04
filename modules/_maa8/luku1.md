@@ -64,7 +64,7 @@ Jos joukossa on vähän havaintoyksiköitä, niin havaintoarvot voi esittää lu
 
 Lapsiperheiden luokittelussa lasketaan, kuinka monessa perheessä, eli havaintoyksikössä, on yksi lapsi (havaintoarvo 1), kuinka monessa on kaksi lasta (havaintoarvo 2), jne. Tiedot on koottu alla olevaan taulukoon:
                 
-| Lasten lkm| f 	|
+| Lasten lkm| $f$ 	|
 | ---		| ---	|
 | 1			| 241709|
 | 2			| 220116| 			
@@ -82,7 +82,6 @@ Lapsiperheiden luokittelussa lasketaan, kuinka monessa perheessä, eli havaintoy
 | 14		| 3		| 
 | 15		| 0		| 
 | 16		| 3		| 
-| Yhteensä	| 566242| 
-| ---		| ---	|
+| **Yhteensä**	| **566242**| 
 			
 			
