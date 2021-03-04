@@ -12,7 +12,8 @@ layout: default
                     <div class="item-thumb bg-deepgrey" style="background-image:url({% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ '/style/image/2-Dice-Icon.svg' | prepend: site.baseurl }}{% endif %});"></div>
                     <a href="maa8/luku1">
                         <div class="item-desc">
-                            <p>{% for page in site.maa8 %}
+                            <p>Luvut:<br />
+			       {% for page in site.maa8 %}
 			       <a href="{{ page.url }}">{{ page.title }}</a><br />
 			       {% endfor %} </p>
                         </div>
