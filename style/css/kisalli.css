@@ -190,6 +190,10 @@ ol.a ol li:last-child {margin-bottom:0;}
   color: white;
 }
 
+.exercise ol {
+	list-style-type: lower-latin;
+}
+
 .box-number::after {
   content: counter(box-counter); /* Apply counter before children's content. */
   color: white;
