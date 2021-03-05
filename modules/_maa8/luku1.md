@@ -202,7 +202,7 @@ extra="
 type="exercise"
 header="Luokittelu ja suhteellinen frekvenssi" 
 content="
-Suomessa on yhteensä 311 kuntaa. Asukasluvultaan suurin on Helsinki (635181 asukasta). Manner-Suomen pienin kunta on Luhanka (756 asukasta) ja Ahvenanmaan pienin kunta on Sottunga (96 asukasta). Melkein kaikissa kunnissa on eri määrä asukkaita, joten havaintoarvot täytyy luokitella ennen frekvenssien laskemista.
+Suomessa on yhteensä 311 kuntaa. Asukasluvultaan suurin on Helsinki \(635181 asukasta\). Manner-Suomen pienin kunta on Luhanka \(756 asukasta\) ja Ahvenanmaan pienin kunta on Sottunga \(96 asukasta\). Melkein kaikissa kunnissa on eri määrä asukkaita, joten havaintoarvot täytyy luokitella ennen frekvenssien laskemista.
 
 [Kuntaliiton verkkosivujen](https://www.kuntaliitto.fi/vaestotietoja-kunnittain) \(luettu 21.10.2020\) kuvassa kunnat, eli havaintoyksiköt, on luokiteltu asukasmäärän, eli havaintoarvon, mukaan viiteen eri luokkaan.
 
