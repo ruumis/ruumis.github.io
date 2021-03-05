@@ -159,6 +159,7 @@ extra="
 1. Koska tilastossa on lapsiperheitä yhteensä 566242 kappaletta, niin yksilapsisten perheiden osuus kaikista aineiston perheistä on 
 					$$\frac{241709}{566242}\approx 42,7\ \%.$$                
 1. Taulukkolaskentaohjelman avulla saadaan seuraava taulukko:
+
 | Lasten lkm| $f$ 	| $f$ %	|	 
 | ---		| ---	| ---	|
 | 1			| 241709| 42,7 %|
@@ -179,4 +180,21 @@ extra="
 | 16		| 3		| 0,0005 %|
 | **Yhteensä**	| **566242**| 100 % |
 " %}	
+
+Mahdollisten havaintoarvojen ja suhteellisten frekvenssien muodostamaa kokonaisuutta kutsutaan *jakaumaksi*. Jakaumiin tutustutaan tarkemmin luvussa [jakaumat]. 
+
+{% include box.html  
+type="exercise"
+header="Frekvenssi ja suhteellinen frekvenssi: kotipihan linnut (jatkoa)" 
+content="
+Aleksin kotipihalla pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen. Kerää lintulajien frekvenssit ja suhteelliset frekvenssit taulukkoon.
+" 
+extra="
+| Havaintoarvo	| $f$ 	| $f$ %	|	 
+| ---			| ---	| ---	|
+| punarinta		| 1		| $\frac{1}{6}\approx 16,7\ \%$|
+| kirjosieppo	| 2		| $\frac{2}{6}\approx 33,3\ \%$|		
+| sinitiainen	| 3		| $\frac{3}{6}=50\ \%$|
+| **Yhteensä**	| 6		| 100 %	|
+" %}
 
