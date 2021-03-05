@@ -198,3 +198,30 @@ extra="
 | **Yhteensä**	| 6		| 100 %	|
 " %}
 
+{% include box.html  
+type="exercise"
+header="Luokittelu ja suhteellinen frekvenssi" 
+content="
+Suomessa on yhteensä 311 kuntaa. Asukasluvultaan suurin on Helsinki (635181 asukasta). Manner-Suomen pienin kunta on Luhanka (756 asukasta) ja Ahvenanmaan pienin kunta on Sottunga (96 asukasta). Melkein kaikissa kunnissa on eri määrä asukkaita, joten havaintoarvot täytyy luokitella ennen frekvenssien laskemista.
+
+[Kuntaliiton verkkosivujen](https://www.kuntaliitto.fi/vaestotietoja-kunnittain) \(luettu 21.10.2020\) kuvassa kunnat, eli havaintoyksiköt, on luokiteltu asukasmäärän, eli havaintoarvon, mukaan viiteen eri luokkaan.
+
+![alt text](images/kunta.png "Suomen kunnat")
+
+1. Miten asukasmäärät on luokiteltu?
+1. Mitä tarkoittavat kuvan luvut 21, 34, 43, 80 ja 133?
+1. Laske luokkien suhteelliset frekvenssit.
+" 
+extra="
+1. alle 5000 asukasta, 5000–10000 asukasta, 10001–20000 asukasta, 20001–50000 asukasta ja yli 50000 asukasta.
+1. Luokkien frekvenssit.	
+" %}
+
+Summafrekvenssi ja suhteellinen summafrekvenssi???	
+
+## Keskiluvut
+
+Aineistoja tutkittaessa mielenkiinnon kohteena on usein löytää aineiston "tyypillisin" tai "keskimmäisin" tapaus. Tätä kuvaamaan käytetään erilaisia keskilukuja. Niiden määrittämisen mielekkyys riippuu havaintoarvojen luonteesta, eli siitä mitä on mielekästä kutsua "tyypilliseksi" kyseisessä aineistossa.
+
+Yksi keskiluku on aineiston yleisin havaintoarvo. Lapsiperheitä tutkiessa huomattiin, että  yksilapsisia perheitä on havaintoyksiköistä kaikkein eniten. Tilastotieteessä yleisintä havaintoarvoa kutsutaan *moodiksi*.
+				
