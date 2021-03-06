@@ -266,4 +266,172 @@ xxx
 " %}
 
 Ehdollinen todennäköisyys ja tapahtumien riippumattomuus liittyvät toisiinsa läheisesti. Jos tapahtumat $A$ ja $B$ ovat riippumattomia, niin tapahtuman $A$ ehdollistaminen tapahtumalla $B$ ei vaikuta $A$:n todennäköisyyteen. 
-       
+
+{% include box.html  
+type="theorem"
+header="Mahdollinen havaintoarvo" 
+content="
+Olkoot $A$ ja $B$ tapahtumia ja $P(B)>0$. Tällöin $A$ ja $B$ ovat riippumattomia täsmälleen silloin, kun $P(A\mid B)=P(A)$.
+" 
+
+extra="
+Jos oletetaan, että $A$ ja $B$ ovat riippumattomia, niin
+$$
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}=\frac{P(A)P(B)}{P(A)}=P(A).
+$$
+Jos oletetaan, että $P(A\mid B)=P(A)$, niin ehdollisen todennäköisyyden määritelmän perusteella
+$$
+P(A\cap B)=P(B)P(A\mid B)=P(A)P(B)
+$$ 
+ja näin ollen $A$ ja $B$ ovat riippumattomia.
+" %}       
+
+Tapahtumien $A$ ja $B$ riippumattomuus merkitsee sitä, että tapahtuma $A$ ei vaikuta tapahtuman $B$ todennäköisyyteen ja tapahtuma $B$ ei vaikuta tapahtuman $A$ todennäköisyyteen. Tapahtumien $A$ ja $B$ riippumattomuuudelle on olennaista niiden todennäköisyydet, sen sijaan tapahtumien erillisyys riippuu vain joukoista $A$ ja $B$, ei lainkaan niiden todennäköisyyksistä. Jos tapahtumat $A$ ja $B$ ovat erilliset, niin $P(A\cap B)=P(\emptyset)=0$, jos taas tapahtumat $A$ ja $B$ ovat riippumattomat, niin $P(A\cap B)=P(A)P(B)$.  Näin ollen tapahtumien $A$ ja $B$ erillisyys ja riippumattomuus voivat toteutua yhtä aikaa vain, jos $P(A)=0$ tai $P(B)=0$. Erityisen tarkka on oltava kaavojen $P(A\cup B)=P(A)+P(B)$ ja $P(A\cap B)=P(A)P(B)$ käytössä. Ensimmäinen on voimassa, kun $A$ ja $B$ ovat erilliset, ja jälkimmäinen on voimassa, kun $A$ ja $B$ ovat riippumattomat.
+              
+{% include box.html  
+type="exercise"
+header="Riippumattomuus" 
+content="
+Pussissa on 40 palloa, jotka on numeroitu $1, \ldots, 40$. Nostetaan pussista kaksi palloa niin, että ensin nostettu pallo palautetaan takaisin pussiin ja vasta sitten nostetaan toinen pallo.  Mikä on tapahtuman \"tuloksena on 13 ja 40\" todennäköisyys?				
+" 
+extra="
+Ei ole väliä missä järjestyksessä pallot nostetaan. Tutkitaan ensin tapausta, jossa pallo 13 nousee ensin. Koska nostettu pallo palautetaan pussiin, niin tapahtumat $A=$ \"ensimmäisen noston tulos on 13\" ja  $B=$ \"toisen noston tulos on 40\" ovat riippumattomia.  Saamme
+$$
+P(A \cap B) = P(A) P(B) = \frac1{40} \cdot \frac1{40} = \frac1{1600}.
+$$
+Lopputuloksen kannalta ei  ole merkitystä, kumpi luvuista saadaan ensin, joten huomioidaan molemmat mahdollisuudet \"13 ja 40\" sekä \"40 ja 13\". Jälkimmäinen tapaus on samanlainen ensin mainitun kanssa. Saamme kysytyksi todennäköisyydeksi $\frac1{1600} + \frac1{1600} = \frac1{800}$.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Yhden nopan heitto" 
+content="
+Heitetään noppaa kerran. Merkitään $A =\{5, 6\}$ ja $B=\{2,4,6\}$. Ovatko tapahtumat erillisiä tai riippumattomia?
+" 
+extra="
+Koska $A\cap B=\{6\}\neq\emptyset$, niin tapahtumat $A$ ja $B$ eivät ole erillisiä. Sen sijaan ne ovat riippumattomat, sillä
+$$
+P(A\cap B)=\frac{1}{6}=\frac{1}{3}\cdot\frac{1}{2}=P(A)P(B).
+$$
+" %}
+
+{% include box.html  
+header="Lisätietoa" 
+content="
+Jos tapahtumat $A$ ja $B$ eivät ole riippumattomia, niin niillä on jotakin *stokastista* vuorovaikutusta  toisiinsa. On kuitenkin varottava vetämästä liian suuria johtopäätöksiä tästä vuorovaikutuksesta, jolla ei yleensä ole *kausaalista* luonnetta (syy-seuraussuhdetta).             
+" %}
+
+## Kombinatoriikka
+
+Erilaiset tavat tehdä valintoja joukkojen alkioista liittyvät keskeisesti todennäköisyyslaskennan klassiseen malliin.  *Kombinatoriikka* on matematiikan osa-alue, joka tutkii eri vaihtoehtojen määrittämistä. Aloitetaan yksinkertaisella esimerkillä. 
+
+Nukella on  kaksi hattua, kolme paitaa, yhdet housut ja kahdet kengät. Kuinka monella eri tavalla nuken voi pukea? Havaitaan ensin että että hatun valitseminen ei vaikuta paidan valitsemiseen, tai yleisemmin eri vaatekappaleiden valinnat ovat toisistaan riippumattomia. Lisäksi jokaisen vaatekappaleen kohdalla sen voi jättää pukematta. Näin ollen eri vaihtoehtoja on 
+$(2+1)\cdot (3+1)\cdot (1+1) \cdot (2+1) = 72$. Tämä luku sisältää myös vaihtoehdon että nukelle ei pueta mitään päälle.	
+
+Voimme yleisesti soveltaa yllä olevaa ajatusta seuraavasti. Ajatellaan että meillä on tilanne jossa suoritetaan valinta $k$:ssa eri askeleessa. Oletetaan että eri askeleiden valinnat ovat toisistaan riippumattomia. Merkitään että askeleessa $i$ meillä on mahdollista tehdä valinta $n_i$ eri vaihtoehdosta. Tällöin vaihtoehtoja on yhteensä
+		$$
+		n_1 \cdot n_2 \cdot \ldots \cdot n_{k-1} \cdot n_k
+		$$ 
+kappaletta. Tätä päättelyä kutsutaan *tuloperiaateeksi*.
+
+Määritellään seuraavaksi kombinatoriikan peruskäsitteet.
+
+{% include box.html  
+type="definition"
+header="Permutaatio" 
+content="
+Äärellisen joukon *permutaatio* on jono, jossa joukon jokainen alkio esiintyy täsmälleen kerran.
+" %}
+
+Huomaa, että jonossa alkioilla on järjestys, mutta joukossa alkioilla ei ole järjestystä.
+
+{% include box.html  
+type="exercise"
+header="Permutaatiot" 
+content="
+Kuinka monta permutaatiota on joukolla $A=\{a, b, c\}$?
+" 
+extra="
+Joukon $A=\{a, b, c\}$ permutaatioita ovat jonot $(a, b, c)$, $(a, c, b)$, $(b, a, c)$, $(b, c, a)$, $(c, a, b)$ ja $(c, b, a)$. Havaitaan, että kolmialkioisella joukolla $A$ on 6 erilaista permutaatiota.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Permutaatiot" 
+content="
+Edellisessä tehtävässä havaittiin, että kolmialkioisella joukolla on 6 erilaista permutaatiota. Jos joukossa on $n$ alkiota, niin kuinka monta erilaista permutaatiota sillä on? Voit ensin tarkastella esimerkiksi nelialkioisen joukon permutaatioita ja yrittää keksiä yleisen säännön, jolla permutaatioiden lukumäärän voi laskea.
+" 
+extra="
+xxxxx
+" %}
+
+{% include box.html  
+type="definition"
+header="$k$-kombinaatio" 
+content="
+Olkoon $A$ joukko, jossa on $n$ alkiota ja $1\leqslant k\leqslant n$. Joukon $A$ $k$*-kombinaatio* on joukon $A$ osajoukko, joka muodostuu joukon $A$ $k$:sta alkiosta.              
+" %}
+
+Esimerkiksi joukon $A=\{a, b, c\}$ 2-kombinaatiot ovat joukot $\{a, b\}$, $\{a, c\}$ ja $\{b, c\}$. Havaitaan, että kolmialkioisella joukolla on 3 erilaista 2-kombinaatiota.
+               
+Huomaa, että permutaatiot ovat jonoja ja kombinaatiot ovat joukkoja.
+
+{% include box.html  
+type="theorem"
+content="
+Olkoon $A$ joukko, jossa on $n$ alkiota.
+1. Joukon $A$ permutaatioiden lukumäärä on $n!=1\cdot 2\cdot 3\cdots n$.
+1. Joukon $A$ $k$-kombinaatioiden lukumäärä on $\displaystyle\binom{n}{k}=\frac{n!}{k!(n-k)!}$.
+" 
+extra="
+1. Aloitetaan $n$ alkion asettaminen jonoon, johon ensimmäiseksi jäseneksi on $n$ vaihtoehtoa. Tämän jälkeen toiseksi jäseneksi jonossa on $n-1$ vaihtoehtoa, ja näin jatkamalla seuraavaksi jonon jäseneksi on aina yksi vaihtoehto vähemmän kuin edelliseksi jäseneksi oli. Jonon viimeiseksi jäseneksi on jäljellä enää yksi vaihtoehto. Näin ollen kertomalla vaihtoehtojen lukumäärät keskenään nähdään, että $n$-alkioisella joukolla on $n\cdot(n-1)\cdots 1=n!$ permutaatiota.                            
+1. Vastaavasti kuin permutaatioiden lukumäärä voidaan päätellä, että $n$ alkiosta voidaan valita $k$ alkiota jonoon $n\cdot(n-1)\cdots(n-k+1)$ tavalla. Tässä samojen alkioiden eri järjestykset ovat eri jonoja, joten $k$-kombinaatioiden lukumäärä saadaan tästä jakamalla luvulla $k!$, joka on eri tapojen lukumäärä järjestää $k$ alkiota jonoon. Saadaan siis, että $n$-alkioisen joukon $k$-kombinaatioiden lukumäärä on
+$$
+\frac{n\cdot(n-1)\cdots(n-k+1)}{k!}=\frac{n\cdot(n-1)\cdots(n-k+1)\cdot(n-k)!}{k!(n-k)!}=\frac{n!}{k!(n-k)!}
+=\binom{n}{k}.
+$$
+" %}
+
+Lukua $n!$ kutsutaan luvun $n$ kertomaksi ja se luetaan "$n$:n kertoma". Lukua $\displaystyle\binom{n}{k}$ kutsutaan *binomikertoimeksi* ja se luetaan "$n$ yli $k$" tai "$n$ alle $k$".  Binomikerrointa voidaan myös merkitä $\text{nCr}(n, k)$. Useimmat laskimet ja laskinohjelmistot käyttävät tällaista merkintää. Esimerkiksi 
+$$
+\binom{9}{4}=\text{nCr}(9, 4) =126.
+$$
+
+{% include box.html  
+type="exercise"
+header="Lotto" 
+content="
+Lotossa on 40 numeroa, joista arvotaan 7 numeroa. Monta erillaista lottoriviä on olemassa?
+" 
+extra="
+Erilaisia 7 numeron lottorivejä on
+$$
+\binom{40}{7}=\frac{40!}{7!33!}=\frac{93\,963\,542\,400}{5\,040}=18\,643\,560.
+$$
+" %}
+
+{% include box.html  
+type="exercise"
+header="Lotto" 
+content="
+Raili miettii lottoriviään seuraavaan arvontaan. Kuudessa edellisessä arvonnassa lottorivissä on ollut luku 9. Kannattaako Railin valita luku 9 omaan riviinsä? 
+" 
+extra="
+xxxxxx
+" %}
+
+{% include box.html  
+type="exercise"
+header="Yhdistys" 
+content="
+Yhdistyksen kokouksessa on 60 osallistujaa. Kuinka monella tavalla heistä voidaan valita puheenjohtaja, varapuheenjohtaja ja sihteeri? Kuinka monella tavalla valitsematta jääneistä voidaan valita 2 toiminnantarkastajaa?  
+" 
+extra="
+xxxxx
+" %}
+
+Joukon, jossa on $n$ alkiota, $k$-permutaatioiden lukumäärää voidaan merkitä $\text{nPr}(n, k)$. Useimmat laskimet ja laskinohjelmistot käyttävät tällaista merkintää, esimerkiksi 
+$$
+\text{nPr}(9, 4) =  9\cdot 8 \cdot 7 \cdot 6=3024.
+$$
+
