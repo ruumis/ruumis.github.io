@@ -457,6 +457,23 @@ header="Keskihajonta"
 content="
 Jos kahden joukon havaintoarvoilla on sama keskiarvo ja sama keskihajonta, niin ovatko joukot välttämättä samoja? 
 " %}
-              
+
+## Diagrammit
+
+Diagrammeilla voidaan havainnollistaa ja konkretisoida havaintoaineistoja. Pylväsdiagrammi sopii esimerkiksi absoluuttisten määrien esittämiseen, kun taas ympyrädiagrammi havainnollistaa hyvin suhteita. Diagrammin tyyppiä valitessa tulee kiinnittää erityistä huomiota siihen, että diagrammi havainnollistaa haluttua asiaa. 
+
+Alla olevissa diagrammeissa on esitetty lapsiperheiden kokonaismäärä ja suhteellinen osuus:
+
+![Pylväsdiagrammi](images/pylvasdiagrammi-lapsiperheet.png "Pylväsdiagrammi")
+![Ympyrädiagrammi](images/ympyradiagrammi-lapsiperheet.png "Ympyrädiagrammi")    
+
+{% include box.html  
+type="exercise"
+header=" Diagrammit" 
+content="
+Tutustu ohjelmistosi eri diagrammeihin. Analysoi eri diagrammityyppien hyviä ja huonoja puolia.
+1. Mitkä niistä sopivat aiemman Esimerkin 1 pihalinnuista havainnollistamiseen?
+1. Mitkä niistä sopivat lapsiperheiden frekvenssien ja suhteellisten frekvenssien havainnollistamiseen?
+" %}              
              
 					
