@@ -1,10 +1,6 @@
 ---
-layout: post
+layout: module-page
 title: Tilastolliset tunnusluvut
-date: 2019-01-01 00:00:00 +0800
-category: tutorial
-thumbnail: /style/image/2-Dice-Icon.svg
-icon: book
 chapter: 1
 module: Tilastot ja todennäköisyys (MAA8)
 ---
