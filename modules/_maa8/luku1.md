@@ -334,5 +334,69 @@ Tutkitaan lapsiperhe-esimerkin lasten lukumäärän (aritmeettista) keskiarvoa. 
 					$$
 Näin ollen lapsiperheiden lasten lukumäärän keskiarvo on noin 1,85. 
 
+{% include box.html  
+type="exercise"
+header="Teknisen apuvälineen käyttö tunnuslukujen selvittämisessä" 
+content="
+Syötä aiemman lapsiperheiden kokoa kuvaavan taulukon luvut tietokoneohjelmaan, ja laske ohjelman avulla moodi, keskiarvo ja mediaani. Tarkista, että saat samat vastaukset kuin tässä materiaalissa.				
+"  %}
 
+Huomaa, että lapsiperhe-esimerkissä moodi, keskiarvo ja mediaani ovat kaikki eri lukuja. Ne voivat olla kaikki samoja, kaksi on samoja ja yksi on eri tai kaikki eri lukuja.
+				
+{% include box.html  
+type="exercise"
+header="Moodi, mediaani ja keskiarvo" 
+content="
+Anna esimerkki kokonaislukujen 4, ..., 10 havaintoarvoista, jossa
+1. moodi, mediaani ja keskiarvo ovat samoja
+1. moodi ja mediaani ovat samoja mutta keskiarvo eroaa näistä,
+1. moodi, mediaani ja keskiarvo ovat kaikki eri suuria.
+" %}	
+
+{% include box.html  
+type="exercise"
+header="Moodi, mediaani ja keskiarvo" 
+content="
+Ovatko seuraavat väitteet totta?
+1. Mediaani on aina suurempi kuin moodi.
+1. Moodi on aina pienempi kuin keskiarvo.
+1. Keskiarvo ja mediaani eivät voi olla yhtä suuria.
+" %}
+
+Huomaa, että järjestysasteikossa havaintoarvot voidaan samaistaa mihin tahansa kasvavaan kokoelmaan lukuja. Samaistuksen jälkeen keskiarvon tekninen laskeminen on mahdollista, mutta saatu tulos ei välttämättä kerro mitään alkuperäisestä tilanteesta, kuten seuraavassa esimerkissä. 
+				
+Olisiko seuraavat tehtävät TSII? 
+
+{% include box.html  
+type="exercise"
+header="Asteikot" 
+content="
+Aleksanteri on lähdössä Kemijärveltä maastopyörävaellukselle. Hän luokittelee kiinnostavat kohteet kolmeen luokkaan: luokassa 1 etäisyys Kemijärveltä on alle 50 km, luokassa 2 etäisyys Kemijärveltä on  50-150 km, luokassa 3 etäisyys Kemijärveltä on  yli 150 km. 
+				
+Nyt havintoyksikköinä ovat paikat ja havaintoarvoina numerot 1, 2 ja 3. Havaintoarvot muodostavat järjestysasteikon, mutta eivät välimatka-asteikkoa. Miksi?
+" 
+extra="
+Esimerkiksi Savukosken kuntakeskus kuuluu luokkaan 2 ja Kemihaara luokkaan 3. Nyt Kemihaaran ja Savukosken kuntakeskuksen luokkien erotuksella  $3-2 =1$ ei ole järkevää tulkintaa.  Siitä ei esimerkiksi voi päätellä mitään Kemihaaran ja Savukosken kuntakeskuksen välisestä etäisyydestä. Myöskään luokkien keskiarvolla $\frac{2+3}{2}= \frac52$ ei ole järkevää tulkintaa. 							
+" %}		
+
+{% include box.html  
+type="exercise"
+header="Moodi, mediaani ja keskiarvo" 
+content="
+Lomakkeissa kysytään usein koulutusta. Mitkä keskiluvut voidaan määrittää, jos vastausvaihtoehdot ovat 
+1. peruskoulu, ammattikoulu, lukio, alempi korkeakoulututkinto, ylempi korkeakoulututkinto, jatkotutkinto,
+1. peruskoulu, 2. asteen koulutus,  korkeakoulututkinto, jatkotutkinto?
+" %}		
+
+{% include box.html  
+type="exercise"
+header="Moodi, mediaani ja keskiarvo" 
+content="
+Keksi esimerkkejä havaintoarvioista, joille voit soveltaa  
+1. moodia, mutta et mediaania,
+1. moodia ja mediaania, mutta et keskiarvoa,
+1. moodia, mediaania ja keskiarvoa?
+" %}
+
+	
 					
