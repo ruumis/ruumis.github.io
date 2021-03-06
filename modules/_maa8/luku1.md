@@ -223,9 +223,10 @@ content="
 Aleksanterin kotipihalla pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen.
 1. Noudattavatko arvot luokitteluasteikkoa?
 1. Mikä on niiden moodi?
-"
+
+" 
 extra="
 1. Lintulajeija ei voi laittaa suuruusjärjestykseen, mutta ne voidaan luokitella. Eli kyseessä on luokitteluasteikko.						                               
-1. Moodi on sinitiainen.
+1. Moodi on "sinitiainen".
 " %}
 
