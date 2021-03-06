@@ -321,41 +321,28 @@ content="
 Jos tapahtumat $A$ ja $B$ eivät ole riippumattomia, niin niillä on jotakin *stokastista* vuorovaikutusta  toisiinsa. On kuitenkin varottava vetämästä liian suuria johtopäätöksiä tästä vuorovaikutuksesta, jolla ei yleensä ole *kausaalista* luonnetta (syy-seuraussuhdetta).             
 " %}
 
-## Kombinatoriikka
 
-Erilaiset tavat tehdä valintoja joukkojen alkioista liittyvät keskeisesti todennäköisyyslaskennan klassiseen malliin.  *Kombinatoriikka* on matematiikan osa-alue, joka tutkii eri vaihtoehtojen määrittämistä. Aloitetaan yksinkertaisella esimerkillä. 
-
-Nukella on  kaksi hattua, kolme paitaa, yhdet housut ja kahdet kengät. Kuinka monella eri tavalla nuken voi pukea? Havaitaan ensin että että hatun valitseminen ei vaikuta paidan valitsemiseen, tai yleisemmin eri vaatekappaleiden valinnat ovat toisistaan riippumattomia. Lisäksi jokaisen vaatekappaleen kohdalla sen voi jättää pukematta. Näin ollen eri vaihtoehtoja on 
-$(2+1)\cdot (3+1)\cdot (1+1) \cdot (2+1) = 72$. Tämä luku sisältää myös vaihtoehdon että nukelle ei pueta mitään päälle.	
-
-Voimme yleisesti soveltaa yllä olevaa ajatusta seuraavasti. Ajatellaan että meillä on tilanne jossa suoritetaan valinta $k$:ssa eri askeleessa. Oletetaan että eri askeleiden valinnat ovat toisistaan riippumattomia. Merkitään että askeleessa $i$ meillä on mahdollista tehdä valinta $n_i$ eri vaihtoehdosta. Tällöin vaihtoehtoja on yhteensä
-		$$
-		n_1 \cdot n_2 \cdot \ldots \cdot n_{k-1} \cdot n_k
-		$$ 
-kappaletta. Tätä päättelyä kutsutaan *tuloperiaateeksi*.
-
-Määritellään seuraavaksi kombinatoriikan peruskäsitteet.
-
-{% include box.html  
-type="definition"
-header="Permutaatio" 
-content="
-Äärellisen joukon *permutaatio* on jono, jossa joukon jokainen alkio esiintyy täsmälleen kerran.
-" %}
-
-Huomaa, että jonossa alkioilla on järjestys, mutta joukossa alkioilla ei ole järjestystä.
 
 {% include box.html  
 type="exercise"
 header="Permutaatiot" 
 content="
-Kuinka monta permutaatiota on joukolla $A=\{a, b, c\}$?
+Edellisessä tehtävässä havaittiin, että kolmialkioisella joukolla on 6 erilaista permutaatiota. Jos joukossa on $n$ alkiota, niin kuinka monta erilaista permutaatiota sillä on? Voit ensin tarkastella esimerkiksi nelialkioisen joukon permutaatioita ja yrittää keksiä yleisen säännön, jolla permutaatioiden lukumäärän voi laskea.
 " 
 extra="
-Joukon $A=\{a, b, c\}$ permutaatioita ovat jonot $(a, b, c)$, $(a, c, b)$, $(b, a, c)$, $(b, c, a)$, $(c, a, b)$ ja $(c, b, a)$. Havaitaan, että kolmialkioisella joukolla $A$ on 6 erilaista permutaatiota.
+xxxxx
 " %}
 
+{% include box.html  
+type="definition"
+header="$k$-kombinaatio" 
+content="
+Olkoon $A$ joukko, jossa on $n$ alkiota ja $1\leqslant k\leqslant n$. Joukon $A$ $k$*-kombinaatio* on joukon $A$ osajoukko, joka muodostuu joukon $A$ $k$:sta alkiosta.              
+" %}
 
+Esimerkiksi joukon $A=\{a, b, c\}$ 2-kombinaatiot ovat joukot $\{a, b\}$, $\{a, c\}$ ja $\{b, c\}$. Havaitaan, että kolmialkioisella joukolla on 3 erilaista 2-kombinaatiota.
+               
+Huomaa, että permutaatiot ovat jonoja ja kombinaatiot ovat joukkoja.
 
 {% include box.html  
 type="theorem"
