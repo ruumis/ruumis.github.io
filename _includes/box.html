@@ -1,16 +1,20 @@
 <div class="{{include.type}} box" id="{{include.id}}">
-{% if include.type == "exercise" %}
-<button type="button" class="collapsible box-button"><span class="exercise-number">Tehtävä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: {{include.header}}</button>
-<div class="box-content">
+{% if include.type == "theorem" or include.type == "definition"%}
+	<h3 class="box-header">
+	{% if include.type == "theorem" %}
+		<span class="box-number">Lause {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
+	{% elsif include.type == "definition" %}
+		<span class="box-number">Määritelmä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
+	{% endif %}
+	{{include.header}}
+	</h3> 
 {% else %}
-<h3 class="box-header">
-  {% if include.type == "theorem" %}
-  <span class="box-number">Lause {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
-  {% elsif include.type == "definition" %}
-  <span class="box-number">Määritelmä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
-  {% endif %}
-  {{include.header}}
-</h3>  
+	<button type="button" class="collapsible box-button">
+	{% if include.type == "exercise" %}
+		<button type="button" class="collapsible box-button"><span class="exercise-number">Tehtävä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
+	{% endif %}
+	{{include.header}}</button>
+{% endif %}
 <div class="box-content" style="display: block;">
 {% endif %}
 <div markdown="1">  

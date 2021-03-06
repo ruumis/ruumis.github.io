@@ -39,17 +39,17 @@ padding: 35px;
 margin: -15px;
 }
 
-.box-button {
-        counter-increment: exercise-counter 1;
-}
-
 .box-header {
-	background-color: #a67d00;
 	counter-increment: box-counter 1;
 }
 
+.box-button {
+        counter-increment: exercise-counter 1;
+		background-color: #e4c2c1;
+}
+
 .box {
-	background-color: #ffdd73;
+	background-color: #fef2f2;
 }
 	
 .objective {
@@ -60,8 +60,12 @@ background-color: #ECF5D4;
 background-color: #FBE127;
 }
 
+.exercise .box-button {
+  background-color: #f4a4a4;
+}
+
 .exercise { 
-    background-color: #f1f1f1;
+    background-color: #f8c8c6;
 }
 .definition {
     background-color: #f2ffcc;
@@ -91,43 +95,13 @@ background-color: #FBE127;
     font-size: 15px;
 }
 
-
-
-ol.a {
-    list-style-type: none;
-    counter-reset:list; /* Initiate a counter */
-    margin-left:0; /* Remove the default left margin */
-    padding-left:0; /* Remove the default left padding */
-}
-ol.a > li {
-    position:relative; /* Create a positioning context */
-    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
-    padding:4px 8px; /* Add some spacing around the content */
-    list-style:none; /* Disable the normal item numbering */
-}
-ol.a > li:before {
-    counter-increment: list;
-    content: "(" counter(list, lower-alpha) ") ";
-    /* Position and style the number */
-    left:-2em;
-    width:2em;
-    /* Some space between the number and the content in browsers that support
-       generated content but not positioning it (Camino 2 is one example) */
-    margin-right:8px;
-    padding:4px;
-    text-align:center;
-}
-li ol.a,
-li ul {margin-top:6px;}
-ol.a ol li:last-child {margin-bottom:0;}
-
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
       cursor: pointer;
 }
 
 .box-button {
-  background-color: #777;
+  background-color: #e4c2c1;
   color: white;
   padding: 18px;
   width: 100%;
