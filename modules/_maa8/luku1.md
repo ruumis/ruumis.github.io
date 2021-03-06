@@ -231,3 +231,24 @@ extra="
 
 Havaintoarvot noudattavat *järjestysasteikkoa*, jos  arvot voidaan asettaa suuruusjärjestykseen. Tälläisiä ovat esimerkiksi sotilasarvo tai ylioppilastutkinnon arvosanat (I, A, ..., E, L). Peruslaskutoimitukset eivät ole sallittuja (numeerisella) järjestysasteikolla, koska luokkien väliset etäisyydet voivat olla erisuuria.
 
+{% include box.html  
+type="exercise"
+header="Järjestysasteikko" 
+content="
+Ylioppilastutkinnossa arvosanat rinnastetaan lukuihin seuraavasti: I vastaa lukua 0, A vastaa lukua 2, B vastaa lukua 3, ...,  E vastaa lukua 6 ja L vastaa lukua 7.  Ajatellaan seuraavaa tilannetta:
+1. "Maija ja Matti kävivät uusimassa matematiikan ylioppilaskokeen. Maija sai korotettua arvosanasta I arvosanaan B ja Matti arvosanasta M arvosanaan L."
+1. Voidaanko tästä päätellä, että Maijan parannus on suurempi kuin Matin? Perustele.
+" 
+extra="
+Ei voida, koska emme tunne eri havaintoarvojen välisiä etäisyyksiä. Maijan arvosanan parannus 3 ei kuvaa arvosanojen I ja B välistä etäisyyttää, kuten ei myöskään Matin arvosanan parannus 2 arvosanojen M ja L välistä etäisyyttä. Koska luvut eivät kuvaa etäisyyksiä, niin niitä ei voi verrata. 						
+" %}	
+
+Järjestysasteikolla havaintoarvoille voidaan määrittää moodin lisäksi mediaani.
+
+{% include box.html  
+type="definition"
+header="Mediaani" 
+content="
+*Mediaani* on suuruusjärjestykseen järjestettyjen havaintoarvojen keskimmäinen havaintoarvo, jos havaintoarvoja on pariton määrä tai jos parillisessa tapauksessa kaksi keskimmäistä arvoa ovat samat. Jos parillisessa tapauksessa kaksi keskimmäistä havaintoarvoa ovat erisuuret, niin silloin mediaan on nämä molemmat arvot.			
+" %}		
+
