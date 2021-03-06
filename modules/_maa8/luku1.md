@@ -216,3 +216,16 @@ content="
 
 Havaintoarvot noudattavat *luokitteluasteikkoa*, jos  arvot voidaan ainoastaan luokitella, mutta niitä ei voi asettaa suuruusjärjestykseen. Tällaisia  ovat esimerkiksi silmien väri, sukupuoli, asuinkunta jne.
 				
+{% include box.html  
+type="exercise"
+header="Luokitteluasteikko ja moodi: kotipihan linnut (jatkoa)" 
+content="
+Aleksanterin kotipihalla pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen.
+1. Noudattavatko arvot luokitteluasteikkoa?
+1. Mikä on niiden moodi?
+" 
+extra="
+1. Lintulajeija ei voi laittaa suuruusjärjestykseen, mutta ne voidaan luokitella. Eli kyseessä on luokitteluasteikko.						                               
+1. Moodi on \"sinitiainen\".
+" %}
+
