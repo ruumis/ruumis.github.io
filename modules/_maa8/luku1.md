@@ -227,6 +227,6 @@ Aleksanterin kotipihalla pesii sinitiainen, kirjosieppo, sinitiainen, kirjosiepp
 " 
 extra="
 1. Lintulajeija ei voi laittaa suuruusjärjestykseen, mutta ne voidaan luokitella. Eli kyseessä on luokitteluasteikko.						                               
-1. Moodi on "sinitiainen".
+1. Moodi on \"sinitiainen\".
 " %}
 
