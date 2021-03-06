@@ -398,5 +398,65 @@ Keksi esimerkkejä havaintoarvioista, joille voit soveltaa
 1. moodia, mediaania ja keskiarvoa?
 " %}
 
-	
+## Keskihajonta
+
+Eri havaintoarvojen joukoilla voi olla sama keskiarvo, esimerkiksi silloin, kun joukot ovat 5, 7, 9 ja 7, 7, 7. Keskiarvo ei siis kerro, miten  havaintoarvot ovat jakautuneet. Tutustumme tässä luvussa *keskihajontaan*., joka  kuvaa havaintoarvojen jakautumista keskiarvon ympärille. Tässä luvussa ajattelemme, että meillä on käytössä välimatka-asteikko, jolloin voimme laskea havaintoarvojen erotuksia.
+
+{% include box.html  
+type="definition"
+header="Vaihteluväli" 
+content="
+Pienin ja suurin havaintoarvo määräävät *vaihteluvälin*. Vaihteluvälin pituus on suurimman ja pienimmän havaintoarvon erotus.                  
+" %}
+
+Alla olevassa taulukossa on Tuulian ja Lukan koearvosanoja. Molemmilla on sama keskiarvo 8, sama vaihteluväli  $[6, 10]$ ja sama vaihteluvälin pituus $10-6=4$, mutta siitä huolimatta näyttää siltä, että Tuulian arvosanoissa on enemmän vaihtelua. 
+
+
+| **Arvosana**		| 4	| 5 | 6 | 7 | 8	| 9	| 10	|
+| **Tuulia (lkm %)**| 0 | 0 | 3	| 0	| 1	| 0 | 3		|
+| **Luka (lkm %)**	| 0	| 0	| 1	| 1	| 3	| 1	| 1		|
+
+{% include box.html  
+type="definition"
+header="Keskihajonta" 
+content="
+*Keskihajonta* on
+$$
+						\sqrt{\frac1n \sum_{j=1}^n (x_i - \bar x)^2} ~,
+						$$
+						missä $x_1, \ldots, x_n$ ovat havaintoarvot ja $\bar x$ on niiden keskiarvo. Keskihajontaa merkitään usein kirjaimella $\sigma$.              
+" %}	
+
+Jatketaan Tuulian ja Lukan koearvosanojoen analysointia ja lasketaan Tuulian ja Lukan koearvosanojen keskihajonta, yllä olevan taulukon tiedoilla. Molempien koearvosanojen keskiarvo on 8.  Tuulian koearvosanojen keskihajonta on
+		
+$$
+						\begin{split}
+						&\sqrt{\frac{1}{7}\left( (6-8)^2+ (6-8)^2 +(6-8)^2 + (8-8)^2 + (10-8)^2+ (10-8)^2+ (10-8)^2\right)}\\
+						&= \sqrt{\frac{1}{7}\left(4+4+4+0+4+4+4\right)} \approx 1{,}9
+						\end{split}
+						$$
+ja Lukan koearvosanojen keskihajonta on
+						$$
+						\begin{split}
+						&\sqrt{\frac{1}{7}\left((6-8)^2+ (7-8)^2 +(8-8)^2 + (8-8)^2 + (8-8)^2+ (9-8)^2+ (10-8)^2\right)}\\
+						&= \sqrt{\frac{1}{7}\left(4+1+0+0+0+1+4\right)} \approx 1{,}2. 
+						\end{split}
+						$$
+Kuten aiemmin jo huomattiin, Tuulian koearvosanoissa on enemmän vaihtelua kuin Lukan.  
+					
+{% include box.html  
+type="exercise"
+header="Tunnusluvut teknisen apuvälineen avulla" 
+content="
+Tilastokeskuksen sivuilta osoitteesta [http://www.tilastokeskus.fi/til/lop/index.html] löyttyy taulukko lukion opiskelijamääristä maakunnittain. Lataa aineisto ja laske siitä tietokoneohjelmalla moodi, mediaani, keskiarvo ja keskihajonta.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Keskihajonta" 
+content="
+Jos kahden joukon havaintoarvoilla on sama keskiarvo ja sama keskihajonta, niin ovatko joukot välttämättä samoja? 
+" %}
+              
+             
 					
