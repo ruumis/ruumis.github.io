@@ -118,7 +118,7 @@ Olkoot $A$ ja $B$ tapahtumia.
 1. $P(\overline{A})=1-P(A)$.
 1. $0\leqslant P(A)\leqslant 1$.
 1. Jos $A\subset B$, niin $P(A)\leqslant P(B)$.
-1. P(A\setminus B)=P(A)-P(A\cap B)$.
+1. $P(A\setminus B)=P(A)-P(A\cap B)$.
 1. $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ (\"yhteenlaskukaava\").
 " 
 extra="
@@ -133,4 +133,137 @@ Todistamme tässä malliksi kohdat (a) ja (c).
 1. -
 1. -
 " %}
-               
+
+{% include box.html  
+type="exercise"
+header="Todista laskusäännöt" 
+content="
+Todista edellisen teoreeman kohdat (b) ja (d)-(e).
+" %}
+     
+{% include box.html  
+type="exercise"
+header="Yhden nopan heitto" 
+content="
+Heitetään noppaa. Merkitään $A =\{5, 6\}$ ja $B=\{2,4,6\}$ eli $B$ vastaa tapahtumaa \"tulos on parillinen\". Laske 
+1. $P(B)$
+1. $P(A\cap B)$
+1. $P(A\cup B)$
+" 
+extra="
+1. $P(B)=\frac{n(B)}{n(E)}=\frac{3}{6}=\frac{1}{2}$.                                
+1. $A\cap B=\{6\}$ ja näin ollen $P(A\cap B)=\frac{n(A\cap B)}{n(E)}=\frac{1}{6}$.
+1. Yhteenlaskukaavan (e) perusteella
+$$
+P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac{1}{3}+\frac{1}{2}-\frac{1}{6}=\frac{4}{6}.
+$$
+Tämä on helppo laskea suoraan määritelmästäkin, kun huomaa, että $A\cup B=\{2,4,5,6\}$
+" %}	
+
+Nostetaan korttipakasta kaksi korttia peräjälkeen ilman takaisinpanoa. Huomaamme että jälkimmäisellä kerralla pakassa on vain 51 korttia, joten  ensin nostettu kortti vaikuttaa tilanteeseen. 
+
+{% include box.html  
+type="definition"
+header="Todennäköisyys ehdolla" 
+content="
+Olkoon $B$ tapahtuma, jolle $P(B)>0$. Tapahtuman $A$ *todennäköisyys ehdolla* $B$ on
+						$$
+						P(A\mid B)=\frac{P(A\cap B)}{P(B)}.
+						$$
+" %}
+
+Tapahtuman $A$ todennäköisyys ehdolla $B$ merkitsee sitä, että ehdosta $B$ tehdään satunnaiskokeen uusi perusjoukko ja lasketaan tapahtuman $A$ todennäköisyys tällöin. Ehdollisen todennäköisyyden idea on kuvailla tapahtuman $A$ sattumista olettaen, että tiedämme ehdon $B$ tapahtuneen. 
+
+{% include box.html  
+type="exercise"
+header="Korttien nosto ilman takaisinpanoa" 
+content="
+Nostetaan korttipakasta kaksi korttia peräjälkeen ilman takaisinpanoa. Millä todennäköisyydellä jälkimmäinen on kuningas kun tiedämme ensimmäisen olleen kuningas?
+" 
+extra="
+Perusjoukko koostuu järjestetyista pareista, joista ensimmäinen jäsen  vastaa ensimmäistä nostoa ja toinen jäsen toista nostoa. Pareja on  $52 \cdot 51 = 2652$ kappaletta. Merkitään että $A$  on niiden parien joukko, joissa ensimmäinen jäsen on \"kuningas\" ja $B$ on niiden parien joukko, joissa toinen jäsen on \"kuningas\".  Näin ollen $A$ vastaa tapahtumaa ''ensimmäinen kortti on kuningas" ja $B$ vastaa tapahtumaa \"toinen kortti on kuningas\". Saamme
+$$
+P(A) = \frac{4 \cdot 51}{52 \cdot 51} =\frac1{13} \quad\text{ja} \quad  P(A \cap B) = \frac{4 \cdot 3}{52 \cdot 51}= \frac{1}{13 \cdot 17},
+$$
+ja näiden avulla
+$$
+P(B\mid A) = \frac{P(A \cap B)}{P(A)}= \frac{\frac{1}{13 \cdot 17}}{\frac1{13}}=\frac1{17}.
+$$
+Samaan tulokseen olisimme päässeet myös seuraavalla päättelyllä: Koska ensimmäinen nostettu kortti oli kuningas, niin pakkaan jää 51 korttia, joista 3 on kuninkaita. Todennäköisyys on siis
+$$
+P(B\mid A)= \frac{3}{51}= \frac1{17}.
+$$ 
+" %}
+
+Ehdollisen todennäköisyyden määritelmästä seuraa suoraan *kertolaskukaava*:    
+
+{% include box.html  
+type="theorem"
+header="Mahdollinen havaintoarvo" 
+content="
+Kun $A$ ja $B$ ovat tapahtumia ja $P(B)>0$, niin $P(A\cap B)=P(B)P(A\mid B)$.
+" %}   
+
+{% include box.html  
+type="exercise"
+header="Pallojen nosto ilman takaisinpanoa" 
+content="
+Pussissa on 40 palloa, jotka on numeroitu $1, \ldots, 40$. Nostetaan pussista kaksi palloa niin, että ensin nostettua palloa ei palautetta takaisin pussiin.  Mikä on tapahtuman \"tuloksena on 13 ja 40\" todennäköisyys?
+" 
+extra="
+Ei ole väliä missä järjestyksessä pallot nostetaan. Tutkitaan ensin tapausta, jossa pallo 13 nousee ensin. Perusjoukko koostuu $40\cdot39=1560$ järjestetystä parista, joista ensimmäinen vastaa ensimmäistä nostoa ja toinen vastaa toista nostoa.
+
+Olkoot $A$ niiden paria joukko joiden ensimmäinen jäsen on  13 ja  $B$ niiden parien joukko joiden toinen jäsen on  40.  Saamme
+$$
+P(A \cap B) = P(A) P(B\mid A) = \frac{1\cdot 39}{40 \cdot 39} \cdot \frac1{39} = \frac1{1560}.
+$$
+Tähän samaan tulokseen olisimme päätyneet huomaamalla että tapahtumaa $A\cap B$ on joukko jossa on yksi alkio $(13, 40)$, ja tällöin todennäköisyys on yksi jaettuna perusjoukon alkioiden lukumäärällä.   
+
+Lopputuloksen kannalta ei  ole merkitystä, kumpi luvuista saadaan ensin, joten huomioidaan molemmat mahdollisuudet \"13 ja 40\" sekä \"40 ja 13\". Jälkimmäinen tapaus on samanlainen ensin mainitun kanssa. Saamme kysytyksi todennäköisyydeksi $\frac1{1560} + \frac1{1560} = \frac1{780}$.																					 
+" %}
+
+Tutkitaan seuraavaksi tapahtumia, jotka eivät vaikuta toisiinsa.  
+
+{% include box.html  
+type="definition"
+header="Riippumattomuus" 
+content="
+Tapahtumat $A$ ja $B$ ovat riippumattomat, jos $P(A\cap B)=P(A)P(B)$.
+" %}	
+
+{% include box.html  
+type="exercise"
+header="Nopan heitto kaksi kertaa" 
+content="
+Heitetään noppaa kaksi kertaa. Olkoon $A$ tapahtuma \"saadaan ensimmäisellä heitolla 6\" ja $B$ tapahtuma \"saadaan toisella heitolla 6\". Ovatko tapahtumat riippumattomia?
+" 
+extra="
+Nyt $A$ on sellaisten järjestettyjen parien joukko, joissa ensimmäinen alkio on 6. Näitä on $1 \cdot 6 =6$ kappaletta. Joukko $B$ on sellaisten järjestettyjen parien joukko, joissa toinen alkio on 6. Näitä on $6 \cdot 1 =6$ kappaletta. Joukko $A\cap B$ koostuu yhdestä alkiosta $(6, 6)$. Perusjoukossa on $6 \cdot 6= 36$ alkiota. Tällöin
+$$
+P(A)P(B) = \frac{6}{36} \cdot \frac{6}{36} = \frac1{36} \quad\text{ja}\quad P(A\cap B) = \frac1{36}. 
+$$ 
+Tästä saamme että tapahtumat $A$ ja $B$ ovat riippumattomia.
+" %} 
+
+{% include box.html  
+type="exercise"
+header="Korttipakasta nosto" 
+content="
+Nostetaan korttipakasta kortteja. Olkoot $A$ tapahtuma \"ensimmäinen kortti on ässä\" ja $B$ tapahtuma \"toinen kortti on kuningatar\". Vaikuttaako tapahtumien $A$ ja $B$ riippumattomuuteen se, että palautetaanko nostettu kortti pakkaan vai ei?
+" 
+extra="
+xxx
+" %}
+
+{% include box.html  
+type="exercise"
+header="Nopan heitto viisi kertaa" 
+content="
+Heitetään noppaa viisi kertaa peräkkäin. Kumpi tuloksista $1, 1, 1, 1, 1$ vai $4, 3, 1, 5, 1$ on todennäköisempi?
+" 
+extra="
+xxx
+" %}
+
+Ehdollinen todennäköisyys ja tapahtumien riippumattomuus liittyvät toisiinsa läheisesti. Jos tapahtumat $A$ ja $B$ ovat riippumattomia, niin tapahtuman $A$ ehdollistaminen tapahtumalla $B$ ei vaikuta $A$:n todennäköisyyteen. 
+       
