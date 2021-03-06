@@ -355,24 +355,64 @@ extra="
 Joukon $A=\{a, b, c\}$ permutaatioita ovat jonot $(a, b, c)$, $(a, c, b)$, $(b, a, c)$, $(b, c, a)$, $(c, a, b)$ ja $(c, b, a)$. Havaitaan, että kolmialkioisella joukolla $A$ on 6 erilaista permutaatiota.
 " %}
 
+
+
+{% include box.html  
+type="theorem"
+content="
+Olkoon $A$ joukko, jossa on $n$ alkiota.
+1. Joukon $A$ permutaatioiden lukumäärä on $n!=1\cdot 2\cdot 3\cdots n$.
+1. Joukon $A$ $k$-kombinaatioiden lukumäärä on $\displaystyle\binom{n}{k}=\frac{n!}{k!(n-k)!}$.
+" 
+extra="
+1. Aloitetaan $n$ alkion asettaminen jonoon, johon ensimmäiseksi jäseneksi on $n$ vaihtoehtoa. Tämän jälkeen toiseksi jäseneksi jonossa on $n-1$ vaihtoehtoa, ja näin jatkamalla seuraavaksi jonon jäseneksi on aina yksi vaihtoehto vähemmän kuin edelliseksi jäseneksi oli. Jonon viimeiseksi jäseneksi on jäljellä enää yksi vaihtoehto. Näin ollen kertomalla vaihtoehtojen lukumäärät keskenään nähdään, että $n$-alkioisella joukolla on $n\cdot(n-1)\cdots 1=n!$ permutaatiota.                            
+1. Vastaavasti kuin permutaatioiden lukumäärä voidaan päätellä, että $n$ alkiosta voidaan valita $k$ alkiota jonoon $n\cdot(n-1)\cdots(n-k+1)$ tavalla. Tässä samojen alkioiden eri järjestykset ovat eri jonoja, joten $k$-kombinaatioiden lukumäärä saadaan tästä jakamalla luvulla $k!$, joka on eri tapojen lukumäärä järjestää $k$ alkiota jonoon. Saadaan siis, että $n$-alkioisen joukon $k$-kombinaatioiden lukumäärä on
+$$
+\frac{n\cdot(n-1)\cdots(n-k+1)}{k!}=\frac{n\cdot(n-1)\cdots(n-k+1)\cdot(n-k)!}{k!(n-k)!}=\frac{n!}{k!(n-k)!}
+=\binom{n}{k}.
+$$
+" %}
+
+Lukua $n!$ kutsutaan luvun $n$ kertomaksi ja se luetaan "$n$:n kertoma". Lukua $\displaystyle\binom{n}{k}$ kutsutaan *binomikertoimeksi* ja se luetaan "$n$ yli $k$" tai "$n$ alle $k$".  Binomikerrointa voidaan myös merkitä $\text{nCr}(n, k)$. Useimmat laskimet ja laskinohjelmistot käyttävät tällaista merkintää. Esimerkiksi 
+$$
+\binom{9}{4}=\text{nCr}(9, 4) =126.
+$$
+
 {% include box.html  
 type="exercise"
-header="Permutaatiot" 
+header="Lotto" 
 content="
-Edellisessä tehtävässä havaittiin, että kolmialkioisella joukolla on 6 erilaista permutaatiota. Jos joukossa on $n$ alkiota, niin kuinka monta erilaista permutaatiota sillä on? Voit ensin tarkastella esimerkiksi nelialkioisen joukon permutaatioita ja yrittää keksiä yleisen säännön, jolla permutaatioiden lukumäärän voi laskea.
+Lotossa on 40 numeroa, joista arvotaan 7 numeroa. Monta erillaista lottoriviä on olemassa?
+" 
+extra="
+Erilaisia 7 numeron lottorivejä on
+$$
+\binom{40}{7}=\frac{40!}{7!33!}=\frac{93\,963\,542\,400}{5\,040}=18\,643\,560.
+$$
+" %}
+
+{% include box.html  
+type="exercise"
+header="Lotto" 
+content="
+Raili miettii lottoriviään seuraavaan arvontaan. Kuudessa edellisessä arvonnassa lottorivissä on ollut luku 9. Kannattaako Railin valita luku 9 omaan riviinsä? 
+" 
+extra="
+xxxxxx
+" %}
+
+{% include box.html  
+type="exercise"
+header="Yhdistys" 
+content="
+Yhdistyksen kokouksessa on 60 osallistujaa. Kuinka monella tavalla heistä voidaan valita puheenjohtaja, varapuheenjohtaja ja sihteeri? Kuinka monella tavalla valitsematta jääneistä voidaan valita 2 toiminnantarkastajaa?  
 " 
 extra="
 xxxxx
 " %}
 
-{% include box.html  
-type="definition"
-header="$k$-kombinaatio" 
-content="
-Olkoon $A$ joukko, jossa on $n$ alkiota ja $1\leqslant k\leqslant n$. Joukon $A$ $k$*-kombinaatio* on joukon $A$ osajoukko, joka muodostuu joukon $A$ $k$:sta alkiosta.              
-" %}
-
-Esimerkiksi joukon $A=\{a, b, c\}$ 2-kombinaatiot ovat joukot $\{a, b\}$, $\{a, c\}$ ja $\{b, c\}$. Havaitaan, että kolmialkioisella joukolla on 3 erilaista 2-kombinaatiota.
-               
-Huomaa, että permutaatiot ovat jonoja ja kombinaatiot ovat joukkoja.
+Joukon, jossa on $n$ alkiota, $k$-permutaatioiden lukumäärää voidaan merkitä $\text{nPr}(n, k)$. Useimmat laskimet ja laskinohjelmistot käyttävät tällaista merkintää, esimerkiksi 
+$$
+\text{nPr}(9, 4) =  9\cdot 8 \cdot 7 \cdot 6=3024.
+$$
 
