@@ -230,3 +230,109 @@ extra="
 1. Moodi on \"sinitiainen\".
 " %}
 
+Havaintoarvot noudattavat *järjestysasteikkoa*, jos  arvot voidaan asettaa suuruusjärjestykseen. Tälläisiä ovat esimerkiksi sotilasarvo tai ylioppilastutkinnon arvosanat (I, A, ..., E, L). Peruslaskutoimitukset eivät ole sallittuja (numeerisella) järjestysasteikolla, koska luokkien väliset etäisyydet voivat olla erisuuria.
+
+{% include box.html  
+type="exercise"
+header="Järjestysasteikko" 
+content="
+Ylioppilastutkinnossa arvosanat rinnastetaan lukuihin seuraavasti: I vastaa lukua 0, A vastaa lukua 2, B vastaa lukua 3, ...,  E vastaa lukua 6 ja L vastaa lukua 7.  Ajatellaan seuraavaa tilannetta:
+1. \"Maija ja Matti kävivät uusimassa matematiikan ylioppilaskokeen. Maija sai korotettua arvosanasta I arvosanaan B ja Matti arvosanasta M arvosanaan L.\"
+1. Voidaanko tästä päätellä, että Maijan parannus on suurempi kuin Matin? Perustele.
+" 
+extra="
+Ei voida, koska emme tunne eri havaintoarvojen välisiä etäisyyksiä. Maijan arvosanan parannus 3 ei kuvaa arvosanojen I ja B välistä etäisyyttää, kuten ei myöskään Matin arvosanan parannus 2 arvosanojen M ja L välistä etäisyyttä. Koska luvut eivät kuvaa etäisyyksiä, niin niitä ei voi verrata. 						
+" %}	
+
+Järjestysasteikolla havaintoarvoille voidaan määrittää moodin lisäksi mediaani.
+
+{% include box.html  
+type="definition"
+header="Mediaani" 
+content="
+*Mediaani* on suuruusjärjestykseen järjestettyjen havaintoarvojen keskimmäinen havaintoarvo, jos havaintoarvoja on pariton määrä tai jos parillisessa tapauksessa kaksi keskimmäistä arvoa ovat samat. Jos parillisessa tapauksessa kaksi keskimmäistä havaintoarvoa ovat erisuuret, niin silloin mediaan on nämä molemmat arvot.			
+" %}		
+
+{% include box.html  
+header="LISÄTIETO:" 
+extra="
+Välimatka-asteikolla parillisessa tapauksessa  mediaani voi  vaihtoehtoisesti olla keskimmäisten lukujen keskiarvon.
+" %}	
+
+Kirjoittamalla lapsiperhe-esimerkissä kaikki havaintoarvot eli kaikkien perheiden lasten lukumäärät peräkkäin suuruusjärjestykseen saamme:
+
+$${\tiny
+					
+						\underbrace{1, \ldots, 1}_{241\,709\text{kpl}}, \underbrace{2, \ldots, 2}_{220\,116\text{kpl}},
+						\underbrace{3, \ldots, 3}_{75\,326\text{kpl}}, \underbrace{4, \ldots, 4}_{18\,409\text{kpl}},
+						\underbrace{5, \ldots, 5}_{5\,493\text{kpl}}, \underbrace{6, \ldots, 6}_{2\,289\text{kpl}},
+						\underbrace{7, \ldots, 7}_{1\,235\text{kpl}}, \underbrace{8, \ldots, 8}_{751\text{kpl}},
+						\underbrace{9, \ldots, 9}_{476\text{kpl}}, \underbrace{10, \ldots, 10}_{262\text{kpl}},
+						\underbrace{11, \ldots, 11}_{117\text{kpl}}, \underbrace{12, \ldots, 12}_{41\text{kpl}},
+						\underbrace{13, \ldots, 13}_{12\text{kpl}}, 14, 14, 14, 16, 16, 16.
+						
+}$$
+
+Tässä on yhteensä 566242 lukua, joka on parillinen määrä. Näin ollen keskimmäistä lukua ei ole. Ensimmäisen puolikkaan viimeinen luku on 2, kuten myös toisen puolikkaan ensimmäinen luku. Mediaani on siis 2.
+					
+{% include box.html  
+type="exercise"
+header="Suhteellinen frekvenssi ja mediaani" 
+content="
+Laske alla olevaan taulukkoon suhteelliset frekvenssit. Pystyykö pelkistä suhteellisista frekvensseistä määrittämään mediaanin?
+
+
+| **Arvosana**	| 4	| 5	| 6	| 7	| 8	| 9	| 10	|
+| **Lkm**		| 1	| 0	| 3	| 1	| 2	| 1	| 2		|
+|	$f$ %		|	|	|	|	|	|	|		|							
+
+" 
+extra="
+" %}
+
+Havaintoarvot noudattavat *välimatka-asteikkoa*, jos arvojen erotus on mielekkäästi tulkittavissa. Tällaisia  ovat esimerkiksi kouluarvosana, vuosiluku, jne. 
+				
+Esimerkiksi mineraalien luokittelussa ja tunnistamisessa käytetään kovuutta kuvaava Mohsin asteikkoa. Se on esimerkki järjestysasteikosta, joka ei ole välimatka-asteikko. Tämä käy ilmi seuraavasta lainauksesta:
+
+> "Mineraalit on jaettu kymmeneen kovuusluokkaan ns. Mohsin kovuusasteikon mukaan. Asteikossa ylemmän luokan mineraalilla kyetään naarmuttamaan alemman luokan mineraalia. [...] Asteikko ei ole läheskään tasavälinen, minkä paljastaa mineraalien todellisia kovuuksia kuvaava ns. Rosiwallin asteikko."
+*Kalle Taipale: Kivet ja mineraalit Suomen luonnossa, Otava, 2010, s. 78.*
+
+{% include box.html  
+header="Lisätieto: Suhdeasteikko" 
+extra="
+Havaintoarvot noudattavat *suhdeasteikkoa*, jos arvojen erotus on mielekkäästi tulkittavissa ja muuttujan arvoilla on jokin absoluuttinen nollakohta. Suhdeasteikko on aina välimatka-asteikko. Esimerkiksi pituus ja rahan määrä ovat suhdeasteikkoja. 			
+" %}
+
+Välimatka-asteikolla voi laskea moodin ja mediaanin lisäksi keskiarvon. 
+
+{% include box.html  
+type="definition"
+header="Keskiarvo" 
+content="
+(Aritmeettinen) *keskiarvo* on havaintoarvojen summa jaettuna havaintoyksiköiden lukumäärällä.
+" %}	
+
+{% include box.html  
+header="Lisätieto: Keskiarvoista" 
+extra="
+Edellä määritelty keskiarvo on \"aritmeettinen keskiarvo\", mutta sana \"aritmeettinen\" jätetään pois, koska tässä moduulissa ei käsitellä muita keskiarvoja. Muita yleisesti käytettyjä keskiarvoja ovat \"geometrinen keskiarvo\" ja \"harmoninen keskiarvo\".						
+" %}
+
+Tutkitaan lapsiperhe-esimerkin lasten lukumäärän (aritmeettista) keskiarvoa. Lasketaan lasten lukumäärä kertomalla ensin lasten lukumäärät niiden frekvensseillä ja laskemalla sitten saadut luvut yhteen: 
+					$$
+						\begin{split}
+						&241\,709 \cdot 1 + 220\,116 \cdot 2 + 75\,326 \cdot 3 + 18\,409 \cdot 4 + 5\,493 \cdot 5 + 2\,289 \cdot 6
+						+  1\,235 \cdot 7 + 752 \cdot 8\\
+						&\quad + 476 \cdot 9
+						+ 262 \cdot 10 + 117 \cdot 11 + 41 \cdot 12 + 12 \cdot 13 + 3 \cdot 14 +0 \cdot 15 + 3 \cdot 16
+						=1\,046\,336
+						\end{split}
+					$$
+					ja jaetaan se perheiden lukumäärällä
+					$$
+						\frac{1\,046\,336}{566\,242}\approx 1{,}85.
+					$$
+Näin ollen lapsiperheiden lasten lukumäärän keskiarvo on noin 1,85. 
+
+
+					
