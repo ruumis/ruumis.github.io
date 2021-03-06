@@ -15,11 +15,12 @@
 	{% endif %}
 	{{include.header}}</button>
 {% endif %}
+{% if include.content %}
 <div class="box-content" style="display: block;">
-{% endif %}
 <div markdown="1">  
 {{include.content}}
 </div>  
+{% endif %}
 {% if include.extra %}
 <button type="button" class="collapsible box-extra-button">
 {% if include.type == "exercise" %}
