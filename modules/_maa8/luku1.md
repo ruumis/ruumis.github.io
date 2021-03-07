@@ -482,6 +482,62 @@ $$
 josta $z=5$.				
 ' %}
 
+{% include box.html  
+type="exercise"
+header="Keskiluvut" 
+content="
+Tarkastellaan seuraava taulukkoja, jossa $z$ on positiivinen kokonaisluku, 
+|$x$	| a	| b	| c	| d	| e	| f	|
+|$f$	| 7	| z	| 4	| z	| 6 | 8	| 
+
+Millä luvun $z$ arvoilla muuttujan $x$
+
+1. moodi on $f$?
+1. mediaani on $d$?
+" 
+dropdown='
+1. $z<8$
+1. Havaintoarvoja on yhteensä $7+z+4+z+6+8= 25+2z$ kappaletta. Huomataan että alkioita on pariton määrä, siis on olemassa keskimmäinen alkio, ja tämän tulee olla muuttujan $x$ arvon $d$ kohdalla. Keskimmäinen alkio on  $\frac{25+2z-1}{2}+1=13+z$ alkio vasemmalta tai oikealta laskien. Havaintoarvo $f$ on $8$ kappaletta ja havaintoarvoa $e$ $6$ kappaletta. Täytyy siis olla että $13+z > 8+6$, eli $z \ge 2$. Toisaalta tulee olla $13+z >7+z+4$ mutta tämä on aina totta. Siis kaikki lukua $2$ suuremmat kokonaisluvut kelpaavat.
+' %}
+
+{% include box.html  
+type="exercise"
+header="Keskiarvo" 
+content="
+Perheessä on kaksi tyttöä ja kaksospojat. Isä laski, että perheen lasten ikien keskiarvo on 12 vuotta. Perheen tytöt ovat 7- ja 15-vuotiaita. Kuinka vanhoja ovat perheen pojat?
+" %}
+
+{% include box.html  
+type="exercise"
+header="Keskiluvut" 
+content="
+Eräänä vuonna jokaisen kuukauden 15. päivän lämpötilat eräässä Suomen kaupungissa klo 12.00 on lueteltu seuraavassa taulukossa. Laske lämpötilojen keskiarvo ja mediaani. Pohdi, kuvaako laskemasi keskilämpötila hyvin kaupungin keskilämpötilaa kyseisenä vuonna.
+
+| Kuukausi	| Lämpötila $^\circ$C	|
+| --- 		| ---					|
+| Tammikuu	| $-2{,}8$				|
+| Helmikuu	| $-10{,}1$				|
+| Maaliskuu	| $-0{,}3$				|
+| Huhtikuu	| $+2{,}2$				|
+| Toukokuu	| $+5{,}9$				|
+| Kesäkuu	| $+9{,}7$				|
+| Heinäkuu	| $+21{,}4$				|
+| Elokuu	| $+18{,}8$				|
+| Syyskuu	| $+5{,}8$				|
+| Lokakuu	| $+0{,}6$				|
+| Marraskuu	| $-1{,}5$				|
+| Joulukuu	| $+2{,}0$				|
+" %}
+
+{% include box.html  
+type="exercise"
+header="Keskiluvut" 
+content="
+Tarkastellaan lukuja 7, 9, 7, 8, 10 ja 8. Mitkä 4 näistä on valittu, kun niiden mediaani on 7,5, moodi 8.
+" 
+dropdown='
+Koska moodi on 8, niin valituista luvuista 2 on 8. Koska mediaani on 7,5, niin yhden luvun tulee olla pienempi kuin 8 eli 7. Valittuja lukuja voivat siten olla joko 7, 8, 8, ja 9 tai 7, 8, 8 ja 10.
+' %}
 
 ## Keskihajonta
 
@@ -507,26 +563,26 @@ header="Keskihajonta"
 content="
 *Keskihajonta* on
 $$
-						\sqrt{\frac1n \sum_{j=1}^n (x_i - \bar x)^2} ~,
-						$$
-						missä $x_1, \ldots, x_n$ ovat havaintoarvot ja $\bar x$ on niiden keskiarvo. Keskihajontaa merkitään usein kirjaimella $\sigma$.              
+\sqrt{\frac1n \sum_{j=1}^n (x_i - \bar x)^2} ~,
+$$
+missä $x_1, \ldots, x_n$ ovat havaintoarvot ja $\bar x$ on niiden keskiarvo. Keskihajontaa merkitään usein kirjaimella $\sigma$.              
 " %}	
 
 Jatketaan Tuulian ja Lukan koearvosanojoen analysointia ja lasketaan Tuulian ja Lukan koearvosanojen keskihajonta, yllä olevan taulukon tiedoilla. Molempien koearvosanojen keskiarvo on 8.  Tuulian koearvosanojen keskihajonta on
 		
 $$
-						\begin{split}
-						&\sqrt{\frac{1}{7}\left( (6-8)^2+ (6-8)^2 +(6-8)^2 + (8-8)^2 + (10-8)^2+ (10-8)^2+ (10-8)^2\right)}\\
-						&= \sqrt{\frac{1}{7}\left(4+4+4+0+4+4+4\right)} \approx 1{,}9
-						\end{split}
-						$$
+\begin{split}
+	&\sqrt{\frac{1}{7}\left( (6-8)^2+ (6-8)^2 +(6-8)^2 + (8-8)^2 + (10-8)^2+ (10-8)^2+ (10-8)^2\right)}\\
+	&= \sqrt{\frac{1}{7}\left(4+4+4+0+4+4+4\right)} \approx 1{,}9
+\end{split}
+$$
 ja Lukan koearvosanojen keskihajonta on
-						$$
-						\begin{split}
-						&\sqrt{\frac{1}{7}\left((6-8)^2+ (7-8)^2 +(8-8)^2 + (8-8)^2 + (8-8)^2+ (9-8)^2+ (10-8)^2\right)}\\
-						&= \sqrt{\frac{1}{7}\left(4+1+0+0+0+1+4\right)} \approx 1{,}2. 
-						\end{split}
-						$$
+$$
+\begin{split}
+	&\sqrt{\frac{1}{7}\left((6-8)^2+ (7-8)^2 +(8-8)^2 + (8-8)^2 + (8-8)^2+ (9-8)^2+ (10-8)^2\right)}\\
+	&= \sqrt{\frac{1}{7}\left(4+1+0+0+0+1+4\right)} \approx 1{,}2. 
+\end{split}
+$$
 Kuten aiemmin jo huomattiin, Tuulian koearvosanoissa on enemmän vaihtelua kuin Lukan.  
 					
 {% include box.html  
@@ -543,6 +599,38 @@ content="
 Jos kahden joukon havaintoarvoilla on sama keskiarvo ja sama keskihajonta, niin ovatko joukot välttämättä samoja? 
 " %}
 
+{% include box.html  
+type="exercise"
+header="Keskiluvut ja keskihajonta" 
+content="
+Lataa [Tilastokeskuksen sivulta taulukko](https://www.stat.fi/tup/alue/kuntienavainluvut.html), jossa on kaikkien Suomen kuntien asukasluku. Laske aineistosta moodi, mediaani ja keskiarvo, sekä keskihajonta.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Keskihajonta" 
+content="
+1. Määritä joukon $\{\-1, 1\}$ keskihajonta.
+1. Onko olemassa toista kaksialkioista joukkoa jolla on sama keskihajonta kuin a-kohdan joukolla? 
+1. Onko olemassa toista kaksialkioista joukkoa, jolla on sama keskiarvo ja keskihajonta kuin a-kohdan joukolla.
+" 
+dropdown='
+1. Keskihajonta on 1.
+1. Mikä tahansa muotoa $\{a-1, a+1\}$ oleva joukko, missä $a \in \R$, täyttää ko ehdot.
+1. Jotta keskiarvo olisi nolla, täytyy joukon olla muotoa $\{-x, x\}$, $x>0$. Tälläisen joukon keskiahjonta
+$\sqrt{\frac12(|x|^2+|x|^2)}=|x|$, vain kun $x=1$. Joten toista tälläistä joukkoa ei ole.  
+' %}
+
+{% include box.html  
+type="exercise"
+header="Keskihajonta" 
+content="
+Onko olemassa sellaista kolmialkioista joukkoa $\{a, b, c\}$ reaalilukuja, jonka keskiarvo on $0$ ja keskihajonta on $\sqrt{2}$? 
+" 
+dropdown='
+Valitaan joukko $\{-x, 0, x\}$, missä $x>0$. Nyt keskiarvo on nolla, ja keskihajonta on $\sqrt{\frac13\cdot 2|x|^2}$. Ratkaisemalla yhtälö $\sqrt{\frac13\cdot 2|x|^2}=\sqrt{2}$ löydetään sopiva $x$.
+' %}
+
 ## Diagrammit
 
 Diagrammeilla voidaan havainnollistaa ja konkretisoida havaintoaineistoja. Pylväsdiagrammi sopii esimerkiksi absoluuttisten määrien esittämiseen, kun taas ympyrädiagrammi havainnollistaa hyvin suhteita. Diagrammin tyyppiä valitessa tulee kiinnittää erityistä huomiota siihen, että diagrammi havainnollistaa haluttua asiaa. 
@@ -554,11 +642,45 @@ Alla olevissa diagrammeissa on esitetty lapsiperheiden kokonaismäärä ja suhte
 
 {% include box.html  
 type="exercise"
-header=" Diagrammit" 
+header="Diagrammit" 
 content="
 Tutustu ohjelmistosi eri diagrammeihin. Analysoi eri diagrammityyppien hyviä ja huonoja puolia.
 1. Mitkä niistä sopivat aiemman Esimerkin 1 pihalinnuista havainnollistamiseen?
 1. Mitkä niistä sopivat lapsiperheiden frekvenssien ja suhteellisten frekvenssien havainnollistamiseen?
-" %}              
+" %}    
+
+{% include box.html  
+type="exercise"
+header="Diagrammin piirtäminen" 
+content="
+[Tilastokeskuksen sivulta](https://www.stat.fi/tup/alue/kuntienavainluvut.html) löytyy maakuntien asukasluvut. (Avainluvut pylväskuvioina maakunnittain.) Luokittele maakunnat asukasluvun mukaan luokkiin  $[0, 50 000)$, $[50000, 100000)$, $[100000, 150000)$, $[150000, 200000)$, $[200000, 400000)$ ja yli 4000000 asukasta. 
+1. Laske luokkien suhteelliset frekvenssit.
+1. Esitä frekvenssit kahdella eri diagrammilla.
+1. Mieti miten hyvin valitsemasi diagrammit sopivat tilanteeseen? Listaa näiden kahden diagrammien hyvät ja huonot puolet (tässä tilanteessa).
+" %}    
+
+{% include box.html  
+type="exercise"
+header="Summafrekvenssi" 
+content="
+Sivulta [https://asuntojen.hintatiedot.fi] löytyy tietoa toteutuneista asuntokaupoista. Hae tieto Helsingin Kalliossa (kaupunki: Helsinki, kaupunginosa: Kallio) myydyistä yksiöistä. Tutkitaan neliöhintoja. Luokittele neliöhinnat 500 euron pituisiin luokkiin. Laske luokille suhteelliset frekvenssin ja piirrä summafrekvenssin kuvaaja. Päättele summafrekvenssin kuvaajasta seuraavat asiat:
+1. 90\% yksiöistä on tätä neliöhintaa edullisempia.
+1. 60\% yksiöitä on tätä neliöhintaa kalliimpia.  
+" %} 
+
+{% include box.html  
+type="exercise"
+header="Diagrammin tulkinta" 
+content='
+[Tilastokeskuksen sivua](http://www.tilastokeskus.fi/til/ksyyt/2018/ksyyt$\_$2018$\_$2019-12-16$\_$kat$\_$001$\_$fi.html) on esitetty suomalaisten kuolemansyiden rakenne. 
+
+![Kuolinsyyt](/images/pylvasdiagrammi-lapsiperheet.png "Kuolinsyyt")
+
+Arvioi diagrammin perusteella minkäikäisten ihmisten todennäköisin kuolinsyy on
+1. tapaturmat.
+1. verenkiertoelinten sairaudet.
+1. kasvaimet.
+1. alkoholiperäiset syyt.
+' %}      
              
 					
