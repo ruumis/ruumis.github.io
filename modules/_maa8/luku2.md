@@ -460,9 +460,31 @@ content='
 Kuusisivuisen nopan kunkin sivun silmäluvuksi voidaan valita mikä tahansa luvuista $1,\ldots,6$. Miten silmäluvut pitää valita, jotta kahdella heitolla tapahtuman "tuloksena ovat 1 ja 2" todennäköisyys on $\frac49$?
 ' 
 extra='
-Lasketaan ensin todennäköisyys tapahtumalle "ensimmäisen heiton tulos on 1 ja toisen tulos on 2": 
-								$$\frac36 \cdot \frac16 = \frac3{36}$$
-Vastaavasti tapahtuman "ensimmäisen heiton tulos on 2 ja toisen tulos on 1" todennäköisyys on 
-								$$\frac16 \cdot \frac36 = \frac3{36}$$.
-Kysytty todennäköisyys on täten $\frac3{36} + \frac3{36} = \frac16$.
+1, 1, 1, 1, 2, 2 tai toisin päin.
 ' %}
+
+Joissain tilanteissa tapausten todennäköisyydet saadaan pinta-aloista. Tarkastellaan tavallista tikkataulua ja tilannetta, jossa tikka osuus satunnaisesti tauluun.  Tällöin kunkin numeron todennäköisyys on sitä vastaava pinta-ala jaettuna koko tikkataulun pinta-alalla.
+
+{% include box.html  
+type="exercise"
+header="Tikkataulu" 
+content='
+Kuvassa on tavallinen tikkataulu, jonka halkaisija on 30 cm. Millä todennäköisyydellä 3 tikalla saadaan kaksi ykköstä ja yksi kahdeksikko?
+![Tikkataulu, jonka halkaisija on 30 cm](images/tikkataulu.png "Tikkataulu, jonka halkaisija on 30 cm.")
+' 
+extra="
+zzzzz
+" %}
+
+{% include box.html  
+type="exercise"
+header="Onnenpyörä" 
+content='
+Nikolai ostaa onnenpyöräpelin, jossa kaikki sektorit ovat yhtä suuria, kuten alla olevassa kuvassa. Pyöräytettäessä onnenpyörä pysähtyy satunnaiseen kohtaan. Millä todennäköisyydellä onnenpyörä pysähtyy mustaan tai valkoiseen sektoriin?
+						
+![Ikean onnenpyöräpeli](images/tikkataulu.png "Ikean onnenpyöräpeli")
+_Ikean [onnenpyöräpeli](https://www.ikea.com/fi/fi/p/lustigt-onnenpyoeraepeli-30387038/)_ (luettu 23.10.2020).
+' 
+extra="
+zzzzz
+" %}
