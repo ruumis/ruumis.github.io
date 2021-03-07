@@ -1,3 +1,8 @@
+.main-content {
+        counter-reset: exercise-counter 0;
+        counter-reset: box-counter 0;
+}
+
 .icon-facebook:before {
   content: '\f09a';
 }
@@ -143,8 +148,12 @@ background-color: #FBE127;
 	list-style-type: lower-latin;
 }
 
-.exercise ol li::after{
+.exercise ol li::marker {
 	content: ')';
+}
+
+.box-number {
+	counter-increment: box-counter 1;
 }
 
 .box-number::after {
@@ -162,11 +171,6 @@ background-color: #FBE127;
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.main-content {
-        counter-reset: exercise-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
-        counter-reset: box-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
 }
 
 .module-navigation {
