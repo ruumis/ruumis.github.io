@@ -148,9 +148,6 @@ background-color: #FBE127;
 	list-style-type: lower-latin;
 }
 
-.exercise ol li::marker {
-	content: ')';
-}
 
 .box-number {
 	counter-increment: box-counter 1;
