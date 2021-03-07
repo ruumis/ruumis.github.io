@@ -470,7 +470,7 @@ type="exercise"
 header="Tikkataulu" 
 content='
 Kuvassa on tavallinen tikkataulu, jonka halkaisija on 30 cm. Millä todennäköisyydellä 3 tikalla saadaan kaksi ykköstä ja yksi kahdeksikko?
-![Tikkataulu, jonka halkaisija on 30 cm](images/tikkataulu.png "Tikkataulu, jonka halkaisija on 30 cm.")
+![Tikkataulu, jonka halkaisija on 30 cm](/images/tikkataulu.png "Tikkataulu, jonka halkaisija on 30 cm.")
 ' 
 extra="
 zzzzz
@@ -482,7 +482,7 @@ header="Onnenpyörä"
 content='
 Nikolai ostaa onnenpyöräpelin, jossa kaikki sektorit ovat yhtä suuria, kuten alla olevassa kuvassa. Pyöräytettäessä onnenpyörä pysähtyy satunnaiseen kohtaan. Millä todennäköisyydellä onnenpyörä pysähtyy mustaan tai valkoiseen sektoriin?
 						
-![Ikean onnenpyöräpeli](images/tikkataulu.png "Ikean onnenpyöräpeli")
+![Ikean onnenpyöräpeli](/images/tikkataulu.png "Ikean onnenpyöräpeli")
 _Ikean [onnenpyöräpeli](https://www.ikea.com/fi/fi/p/lustigt-onnenpyoeraepeli-30387038/)_ (luettu 23.10.2020).
 ' 
 extra="

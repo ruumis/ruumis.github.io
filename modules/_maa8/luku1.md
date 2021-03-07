@@ -21,7 +21,7 @@ Tämän luvun tavoitteena on, että pystyt xxxx. Osaat
 ## Frekvenssi
 Kiinnistava aloitus tilastojen merkityksestä yhteiskunnassa esim. korona.
 
-Tässä luvussa tutkitaan Suomessa asuvia lapsiperheitä, joissa on alle 18-vuotiaita lapsia. Lapsiperheitä koskevat tiedot on poimittu <a href="https://www.stat.fi/">Tilastokeskuksen sivulta</a>. Tämä lähestyminen seuraa [kevään 2020 lyhyen matematiikan ylioppilaskokeen tehtävää 6](http://yle.fi/plus/abitreenit/2020/kevat/2020-03-18_N_fi/index.html#6>).
+Tässä luvussa tutkitaan Suomessa asuvia lapsiperheitä, joissa on alle 18-vuotiaita lapsia. Lapsiperheitä koskevat tiedot on poimittu [Tilastokeskuksen sivulta](href="https://www.stat.fi/). Tämä lähestyminen seuraa [kevään 2020 lyhyen matematiikan ylioppilaskokeen tehtävää 6](http://yle.fi/plus/abitreenit/2020/kevat/2020-03-18_N_fi/index.html#6>).
 
 Tutkimista varten määritellään muutamia tilastotieteen keskeisiä käsitteitä.
 
@@ -460,8 +460,8 @@ Diagrammeilla voidaan havainnollistaa ja konkretisoida havaintoaineistoja. Pylv�
 
 Alla olevissa diagrammeissa on esitetty lapsiperheiden kokonaismäärä ja suhteellinen osuus:
 
-![Pylväsdiagrammi](images/pylvasdiagrammi-lapsiperheet.png "Pylväsdiagrammi")
-![Ympyrädiagrammi](images/ympyradiagrammi-lapsiperheet.png "Ympyrädiagrammi")    
+![Pylväsdiagrammi](/images/pylvasdiagrammi-lapsiperheet.png "Pylväsdiagrammi")
+![Ympyrädiagrammi](/images/ympyradiagrammi-lapsiperheet.png "Ympyrädiagrammi")    
 
 {% include box.html  
 type="exercise"
