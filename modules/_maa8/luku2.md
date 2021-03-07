@@ -31,10 +31,32 @@ header="Joukko-opin merkintöjä"
 content="
 1. Ovatko joukot $\{\frac{2n}{n^2}: n= 1, \ldots, 4\}$ ja $\{\frac2{n-5}: n= 6, \ldots, 9\}$ samoja?
 1. Kuinka monta kaksialkioista jonoa voidaan joukon $\{a, b, c\}$ alkioista muodostaa?
-" 
-dropdown="
-1. 
-1. 
+" %}
+
+{% include box.html  
+type="exercise"
+header="Joukko-oppi" 
+content="
+Tarkastellaan joukkoja $A=\{0,1,2,3,4\}$, $B=\{3,4,5\}$ ja
+$C=\{2,3\}$.
+1. Mitä ovat joukot $A\cup B$, $B\cap C$, $(A\cup B)\cap C$ ja $A\setminus C$?
+1. Onko totta, että $B\subset C$?  Ehtä $C\subset A$?
+1. Keksi jokin sellainen joukkojen $A$, $B$ ja $C$ välinen joukko-operaatio, että saat tuloksena joukon $\{0,1\}$.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Joukko-oppi" 
+content="
+Tarkastellaan jonoa $(\lfloor\ln(n)\rfloor\colon n=1,\ldots,9)$, missä merkintä $\lfloor x\rfloor$ tarkoittaa luvun $x$ kokonaisosaa. Esimerkiksi $\lfloor 1\rfloor=1$ ja $\lfloor 2{,}3\rfloor=2$. Määritä jonon ensimmäinen, viides ja viimeinen jäsen. Miksi ei ole mielekästä kysyä, että määritä  joukon $\{\lfloor\ln(n)\rfloor\colon n=0,1,\ldots,9\}$ ensimmäinen, viides ja viimeinen jäsen? Kuinka monta alkiota joukossa $\{\lfloor\ln(n)\rfloor\colon n=0,1,\ldots,9\}$ on?
+" %}
+
+{% include box.html  
+type="exercise"
+header="Joukko-oppi" 
+content="
+1. Selitä omin sanoin mitä eroa on joukon alkiolla ja osajoukolla.
+1. Selitä omin sanoin mitä eroa on joukolla ja jonolla.
 " %}
 
 ## Klassinen todennäköisyys
@@ -47,10 +69,10 @@ Klassinen todennäköisyys perustuu *symmetrisiin alkeistapauksiin*.	Tarkoitamme
 type="definition"
 header="Klassinen todennäköisyys" 
 content="
- Tapahtuman $A$ *klassinen todennäköisyys* on
-						$$
-						P(A)=\frac{n(A)}{n(E)},
-						$$
+Tapahtuman $A$ *klassinen todennäköisyys* on
+$$
+P(A)=\frac{n(A)}{n(E)},
+$$
 missä $n(A)$ on tapahtuman $A$ alkioiden eli \"suotuisten alkeistapausten\" lukumäärä ja $n(E)$ on perusjoukon $E$ alkioiden eli kaikkien alkeistapausten lukumäärä.
 " %}
 
@@ -62,9 +84,9 @@ Tarkastellaan yhden nopan heittoa, jolloin perusjoukkona on nopanheiton mahdolli
 " 
 dropdown="
 Lasketaan todennäköisyys sille, että tuloksena on viitonen tai kuutonen. Tätä varten merkitään $A=\{5,6\}$, jonka todennäköisyys on
-								$$
-								P(A)=\frac{n(A)}{n(E)}=\frac{2}{6}=\frac{1}{3}.
-								$$
+$$
+P(A)=\frac{n(A)}{n(E)}=\frac{2}{6}=\frac{1}{3}.
+$$
 " %}
 
 Tapahtumien todennäköisyydet on tapana ilmoittaa murtolukuina (tarkkoina arvoina), desimaalilukuina esim. kahden merkitsevän numeron tarkkuudella tai prosentteina. Edellisen esimerkin vastauksen voi siis esittää $\frac{1}{3}$, $0{,}33$ tai $33\ \%$.
@@ -76,26 +98,22 @@ content="
 Heitetään kahta noppaa ja tutkitaan noppien silmälukujen summaa.
 1. Määritä perusjoukko.
 1. Laske todennäköisyys tapahtumalle \"silmälukujen summa on vähintään 10\".
-" 
-dropdown="
-1. 
-1. 
 " %}					
 
 Tulkitsemme nyt joukko-opin merkintöjä todennäköisyyden kannalta. Tapahtuma $A = \emptyset$ (tyhjä joukko), jos tapahtuma $A$ on mahdoton eli se ei sisällä alkioita.
 
 Tapahtumien $A$ ja $B$ *yhdiste* on 
-					$$
-					A \cup B = \{ A\text{ tapahtuu tai } B \text{ tapahtuu}\}.
-					$$
+$$
+A \cup B = \{ A\text{ tapahtuu tai } B \text{ tapahtuu}\}.
+$$
 Tässä "tai" sisältää mahdollisuuden, että molemmat  $A$ ja $B$ tapahtuvat. Tapahtumien $A$ ja $B$ *leikkaus* on 
-					$$
-					A \cap B = \{ A\text{ tapahtuu ja } B \text{ tapahtuu}\},
-					$$
+$$
+A \cap B = \{ A\text{ tapahtuu ja } B \text{ tapahtuu}\},
+$$
 joka tarkoittaa, että molemmat tapahtumat $A$ ja $B$ tapahtuvat. Tapahtumien $A$ ja $B$ *erotus* on 
-					$$
-					A \setminus B = \{ A\text{ tapahtuu ja } B \text{ ei tapahdu}\}.
-					$$
+$$
+A \setminus B = \{ A\text{ tapahtuu ja } B \text{ ei tapahdu}\}.
+$$
 Joukon $A$ *komplementtia* perusjoukon $E$ suhteen merkitään $\overline{A}=E\setminus A$. Tällöin $P(\overline{A})$ merkitsee todennäköisyyttä, että "$A$ ei tapahdu".
 
 {% include box.html  
@@ -321,6 +339,53 @@ content="
 Jos tapahtumat $A$ ja $B$ eivät ole riippumattomia, niin niillä on jotakin *stokastista* vuorovaikutusta  toisiinsa. On kuitenkin varottava vetämästä liian suuria johtopäätöksiä tästä vuorovaikutuksesta, jolla ei yleensä ole *kausaalista* luonnetta (syy-seuraussuhdetta).             
 " %}
 
+{% include box.html  
+type="exercise"
+header="Klassinen todennäköisyys" 
+content="
+Korttipakasta nostetaan kolme korttia. Mikä on todennäköisyys, että
+kaikki ovat eri maata?
+" %}
+
+{% include box.html  
+type="exercise"
+header="Klassinen todennäköisyys" 
+content="
+Heitetään kolikkoa viisi kertaa peräkkäin. Mikä on todennäköisyys, että saadaan
+1. kolme kruunaa ja kaksi klaavaa,
+1. ensin kolme kruunaa ja sitten kaksi klaavaa?
+" %}
+
+{% include box.html  
+type="exercise"
+header="Klassinen todennäköisyys" 
+content="
+Heitetään noppaa 10 kertaa peräkkäin. Mikä on todennäköisyys, että ei saada silmälukuja 3 ja 4 lainkaan?
+" %}
+
+{% include box.html  
+type="exercise"
+header="Toistokoe" 
+content="
+Pussissa on kolme punaista ja viisi mustaa palloa. Matti nostaa pussista yhden pallon kerrallaan ja sen värin kirjattuaan palauttaa pallon pussiin. Mikä on todennäköisyys, että kahdeksassa nostossa tulee kolme punaista ja viisi mustaa palloa? 
+" %}
+
+{% include box.html  
+type="exercise"
+header="Klassinen todennäköisyys" 
+content="
+Anna nopanheiton avulla esimerkki tapahtumista $A$ ja $B$, jotka toteuttavan Lauseen 2.1 (TN laskusääntöjä ja perusominaisuuksia) kohdat. Anna jokaiselle kohdalle oma esimerkki.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Klassinen todennäköisyys" 
+content="
+Olkoon $A$, $B$ ja $C$ tapahtumia, joille $P(A)+P(B)+P(C)=1$. Lisäksi $P(A)=P(B \cap C)$, $P(A)=P(B)$ ja $P(C)=2 P(B)$.
+1. Kuinka paljon on $P(A)$?
+1. Ovatko $B$ ja $C$ erillisiä?
+" %}
+
 ## Kombinatoriikka
 
 Erilaiset tavat tehdä valintoja joukkojen alkioista liittyvät keskeisesti todennäköisyyslaskennan klassiseen malliin.  *Kombinatoriikka* on matematiikan osa-alue, joka tutkii eri vaihtoehtojen määrittämistä. Aloitetaan yksinkertaisella esimerkillä. 
@@ -435,6 +500,37 @@ $$
 \text{nPr}(9, 4) =  9\cdot 8 \cdot 7 \cdot 6=3024.
 $$
 
+{% include box.html  
+type="exercise"
+header="Kombinaatiot" 
+content="
+Korttipakassa on 10 korttia, jotka ovat joko punaisia tai mustia. Kun pakasta nostetaan 3 korttia, niin todennäköisyys että kaikki ovat punaisia on X(annetaan tähän sopivaluku). Kuinka monta punaista oli alunperin pakassa? 
+" %}
+
+{% include box.html  
+type="exercise"
+header="Kombinatoriikka" 
+content="
+Luettele kaikki 4-alkioiset
+1. jonot,
+1. joukot
+jotka voit muodostaa joukon $\{1,2,3,4,5\}$ alkioista. 
+" %}
+
+{% include box.html  
+type="exercise"
+header="Kombinatoriikka" 
+content="
+Pohjoismaiden pääministerit asettuvat istumaan pyöreän pöydän ääreen. Kuinka monessa eri järjestyksessä he voivat istua? Järjestys on sama, jos se saadaan pöytää kiertämällä. Kuinka monessa istumajärjestyksessä Suomen pääministeri voi istua Ruotsin ja Norjan pääministerien vieressä?
+" %}
+
+{% include box.html  
+type="exercise"
+header="Kombinatoriikka" 
+content="
+Vartion retkellä on mukana 6 jäsentä. Kuinka monella tavalla voidaan valita yksi saunan lämmittäjä ja kaksi veden kantajaa?  
+" %}
+
 ## Klassisen todennäköisyyden laajennus 
 
 Klassisessa todennäköisyydessä kaikki alkeistapahtumat ovat yhtä todennäköisiä. Tutustumme esimerkkitehtävin tapahtumiin, joissa alkeistatapahtumien todennäköisyydet ovat eri suuria, mutta tilanteiden analysoinnissa voi silti käyttää klassisesta todennäköisyydestä tuttuja menetelmiä.
@@ -488,3 +584,43 @@ _Ikean [onnenpyöräpeli](https://www.ikea.com/fi/fi/p/lustigt-onnenpyoeraepeli-
 dropdown="
 zzzzz
 " %}
+
+{% include box.html  
+type="exercise"
+header="Geometrinen todennäköisyys" 
+content='
+Lentokoneesta pudotetaan paketti, joka putoaa ympyrän sisälle (otetaan Google Mapsista ilmakuva, johon piirretään ympyrä). Jokainen ympyrän kohta on yhtä todennäköinen putoamiskohta. Millä todennäköisyydellä paketti putoaa vesistöön?
+' %}
+
+{% include box.html  
+type="exercise"
+header="Modifioitu noppa" 
+content='
+Tutkitaan 6-sivuista noppaa. Neljällä sivulla on kullakin yksi väri: punainen, sininen, keltainen ja vihreä.
+Yhdellä sivulla nopan heittäjä saa valita punaisen ja sinisen välillä, ja yhdellä sivulla nopan heittäjä saa valita kaikista väreistä.
+1. (a) Nopan heittäjä tarvitsee sinisen tai vihreän voittaakseen pelin. Laske todennäköisyys tapahtumalle sininen tai vihreä.
+1. Laske kunkin värin todennäköisyys. Summaa todennäköisyydet yhteen. Mitä havaitset? Mistä tämä johtuu?
+' 
+dropdown='
+Värit eivät ole alkeistapauksia, joten niiden summa ei ole $1$.
+' %}
+
+{% include box.html  
+type="exercise"
+header="Geometrinen todennäköisyys" 
+content='
+Janalle, jonka pituus on $1$, sijoitetaan umpimähkään ja toisistaan riippumatta kaksi pistettä. Laske todennäköisyys,  että pisteiden etäisyys on suurempi kuin $\frac{1}{2}$.
+'
+dropdown='
+Vihje: Perusjoukko on neliö, jonka sivun pituus on 1. Tulkitse pisteiden sijoittaminen neliössä niin, että ensimmäinen piste sijoitetaan neliön alemmalle vaakasivulle ja toinen piste vasemmalle pystysivulle.
+' %}
+
+{% include box.html  
+type="exercise"
+header="Geometrinen todennäköisyys" 
+content='
+Keksi tikkataulusta tehtävä jonka jonka vastauksena on todennäköisyys $0{,}2$.
+'
+dropdown='
+Esimerkiksi saadaan 10 tai 1.
+' %}
