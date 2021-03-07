@@ -123,7 +123,7 @@ background-color: #FBE127;
 .exercise > .active, .exercise-button:hover,
 .box > .active, .box-button:hover
 {
-  background-color: #555;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 /* Style the collapsible content. Note: hidden by default */
