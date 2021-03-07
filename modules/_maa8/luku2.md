@@ -181,7 +181,7 @@ content="
 Nostetaan korttipakasta kaksi korttia peräjälkeen ilman takaisinpanoa. Millä todennäköisyydellä jälkimmäinen on kuningas kun tiedämme ensimmäisen olleen kuningas?
 " 
 extra="
-Perusjoukko koostuu järjestetyista pareista, joista ensimmäinen jäsen  vastaa ensimmäistä nostoa ja toinen jäsen toista nostoa. Pareja on  $52 \cdot 51 = 2652$ kappaletta. Merkitään että $A$  on niiden parien joukko, joissa ensimmäinen jäsen on \"kuningas\" ja $B$ on niiden parien joukko, joissa toinen jäsen on \"kuningas\".  Näin ollen $A$ vastaa tapahtumaa ''ensimmäinen kortti on kuningas" ja $B$ vastaa tapahtumaa \"toinen kortti on kuningas\". Saamme
+Perusjoukko koostuu järjestetyista pareista, joista ensimmäinen jäsen  vastaa ensimmäistä nostoa ja toinen jäsen toista nostoa. Pareja on  $52 \cdot 51 = 2652$ kappaletta. Merkitään että $A$  on niiden parien joukko, joissa ensimmäinen jäsen on \"kuningas\" ja $B$ on niiden parien joukko, joissa toinen jäsen on \"kuningas\".  Näin ollen $A$ vastaa tapahtumaa \"ensimmäinen kortti on kuningas\" ja $B$ vastaa tapahtumaa \"toinen kortti on kuningas\". Saamme
 $$
 P(A) = \frac{4 \cdot 51}{52 \cdot 51} =\frac1{13} \quad\text{ja} \quad  P(A \cap B) = \frac{4 \cdot 3}{52 \cdot 51}= \frac{1}{13 \cdot 17},
 $$
@@ -321,7 +321,39 @@ content="
 Jos tapahtumat $A$ ja $B$ eivät ole riippumattomia, niin niillä on jotakin *stokastista* vuorovaikutusta  toisiinsa. On kuitenkin varottava vetämästä liian suuria johtopäätöksiä tästä vuorovaikutuksesta, jolla ei yleensä ole *kausaalista* luonnetta (syy-seuraussuhdetta).             
 " %}
 
+## Kombinatoriikka
 
+Erilaiset tavat tehdä valintoja joukkojen alkioista liittyvät keskeisesti todennäköisyyslaskennan klassiseen malliin.  *Kombinatoriikka* on matematiikan osa-alue, joka tutkii eri vaihtoehtojen määrittämistä. Aloitetaan yksinkertaisella esimerkillä. 
+
+Nukella on  kaksi hattua, kolme paitaa, yhdet housut ja kahdet kengät. Kuinka monella eri tavalla nuken voi pukea? Havaitaan ensin että että hatun valitseminen ei vaikuta paidan valitsemiseen, tai yleisemmin eri vaatekappaleiden valinnat ovat toisistaan riippumattomia. Lisäksi jokaisen vaatekappaleen kohdalla sen voi jättää pukematta. Näin ollen eri vaihtoehtoja on 
+$(2+1)\cdot (3+1)\cdot (1+1) \cdot (2+1) = 72$. Tämä luku sisältää myös vaihtoehdon että nukelle ei pueta mitään päälle.	
+
+Voimme yleisesti soveltaa yllä olevaa ajatusta seuraavasti. Ajatellaan että meillä on tilanne jossa suoritetaan valinta $k$:ssa eri askeleessa. Oletetaan että eri askeleiden valinnat ovat toisistaan riippumattomia. Merkitään että askeleessa $i$ meillä on mahdollista tehdä valinta $n_i$ eri vaihtoehdosta. Tällöin vaihtoehtoja on yhteensä
+		$$
+		n_1 \cdot n_2 \cdot \ldots \cdot n_{k-1} \cdot n_k
+		$$ 
+kappaletta. Tätä päättelyä kutsutaan *tuloperiaateeksi*.
+
+Määritellään seuraavaksi kombinatoriikan peruskäsitteet.
+
+{% include box.html  
+type="definition"
+header="Permutaatio" 
+content="
+Äärellisen joukon *permutaatio* on jono, jossa joukon jokainen alkio esiintyy täsmälleen kerran.
+" %}
+
+Huomaa, että jonossa alkioilla on järjestys, mutta joukossa alkioilla ei ole järjestystä.
+
+{% include box.html  
+type="exercise"
+header="Permutaatiot" 
+content="
+Kuinka monta permutaatiota on joukolla $A=\{a, b, c\}$?
+" 
+extra="
+Joukon $A=\{a, b, c\}$ permutaatioita ovat jonot $(a, b, c)$, $(a, c, b)$, $(b, a, c)$, $(b, c, a)$, $(c, a, b)$ ja $(c, b, a)$. Havaitaan, että kolmialkioisella joukolla $A$ on 6 erilaista permutaatiota.
+" %}
 
 {% include box.html  
 type="exercise"
