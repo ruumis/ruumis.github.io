@@ -43,7 +43,7 @@ Aleksanteri tutkii kotipihallaan pesivien lintujen linnunpönttöjen asukkaat. N
 1. Mikä Aleksanterin tutkimuksessa on havaintoyksikkö? 
 1. Mikä Aleksanterin tutkimuksessa on havaintoarvo?
 " 
-extra="
+dropdown="
 1. Linnunpöntöt ovat havaintoyksiköitä, niitä on kuusi kappaletta. 
 1. Jokaiseen havaintoyksikköön liittyy suure, joka on linnun laji. Linnun laji on siis havaintoarvo.
 " %}
@@ -99,7 +99,7 @@ Aleksanteri jatkaa linnunpönttöjen tutkimista tutkimalla myös naapurien linnu
 1. Anna esimerkki lintulajista, joka on mielekäs mahdollinen havaintoarvo.
 1. Anna esimerkki lintulajista, joka ei ole mielekäs mahdollinen havaintoarvo.
 " 
-extra="
+dropdown="
 1. Kaikki havaintoarvot ovat mahdollisia havaintoarvoja, joten Aleksanterin pihan lintulajit (havaintoarvot) kelpaavat vastaukseksi. Myös esimerkiksi talitiainen on mielekäs mahdollinen havaintoarvo.                                
 1. Strutsi, koska se ei pesi pöntössä.
 " %}
@@ -151,7 +151,7 @@ Tehtävänä on täydentää taulukkoon suhteelliset frekvenssit.
 1. Kopioi kaava jokaiseen havaintoarvoon tarttumalla edellisen kohdan solun oikeasta alakulmasta kiinni ja maalaamalla sarake Yhteensä-riville asti. 	
 1. Tarkista vastauksesta, saitko tehtyä samanlaisen taulukon.										
 " 
-extra="
+dropdown="
 1. Koska tilastossa on lapsiperheitä yhteensä 566242 kappaletta, niin yksilapsisten perheiden osuus kaikista aineiston perheistä on 
 					$$\frac{241709}{566242}\approx 42,7\ \%.$$                
 1. Taulukkolaskentaohjelman avulla saadaan seuraava taulukko:
@@ -185,7 +185,7 @@ header="Frekvenssi ja suhteellinen frekvenssi: kotipihan linnut (jatkoa)"
 content="
 Aleksin kotipihalla pesii sinitiainen, kirjosieppo, sinitiainen, kirjosieppo, punarinta ja sinitiainen. Kerää lintulajien frekvenssit ja suhteelliset frekvenssit taulukkoon.
 " 
-extra="
+dropdown="
 | Havaintoarvo	| $f$ 	| $f$ %	|	 
 | ---			| ---	| ---	|
 | punarinta		| 1		| $\frac{1}{6}\approx 16,7\ \%$|
@@ -221,7 +221,7 @@ Aleksanterin kotipihalla pesii sinitiainen, kirjosieppo, sinitiainen, kirjosiepp
 1. Mikä on niiden moodi?
 
 " 
-extra="
+dropdown="
 1. Lintulajeija ei voi laittaa suuruusjärjestykseen, mutta ne voidaan luokitella. Eli kyseessä on luokitteluasteikko.						                               
 1. Moodi on \"sinitiainen\".
 " %}
@@ -236,7 +236,7 @@ Ylioppilastutkinnossa arvosanat rinnastetaan lukuihin seuraavasti: I vastaa luku
 1. \"Maija ja Matti kävivät uusimassa matematiikan ylioppilaskokeen. Maija sai korotettua arvosanasta I arvosanaan B ja Matti arvosanasta M arvosanaan L.\"
 1. Voidaanko tästä päätellä, että Maijan parannus on suurempi kuin Matin? Perustele.
 " 
-extra="
+dropdown="
 Ei voida, koska emme tunne eri havaintoarvojen välisiä etäisyyksiä. Maijan arvosanan parannus 3 ei kuvaa arvosanojen I ja B välistä etäisyyttää, kuten ei myöskään Matin arvosanan parannus 2 arvosanojen M ja L välistä etäisyyttä. Koska luvut eivät kuvaa etäisyyksiä, niin niitä ei voi verrata. 						
 " %}	
 
@@ -251,7 +251,7 @@ content="
 
 {% include box.html  
 header="LISÄTIETO:" 
-extra="
+dropdown="
 Välimatka-asteikolla parillisessa tapauksessa  mediaani voi  vaihtoehtoisesti olla keskimmäisten lukujen keskiarvon.
 " %}	
 
@@ -283,7 +283,7 @@ Laske alla olevaan taulukkoon suhteelliset frekvenssit. Pystyykö pelkistä suht
 |	$f$ %		|	|	|	|	|	|	|		|							
 
 " 
-extra="
+dropdown="
 " %}
 
 Havaintoarvot noudattavat *välimatka-asteikkoa*, jos arvojen erotus on mielekkäästi tulkittavissa. Tällaisia  ovat esimerkiksi kouluarvosana, vuosiluku, jne. 
@@ -295,7 +295,7 @@ Esimerkiksi mineraalien luokittelussa ja tunnistamisessa käytetään kovuutta k
 
 {% include box.html  
 header="Lisätieto: Suhdeasteikko" 
-extra="
+dropdown="
 Havaintoarvot noudattavat *suhdeasteikkoa*, jos arvojen erotus on mielekkäästi tulkittavissa ja muuttujan arvoilla on jokin absoluuttinen nollakohta. Suhdeasteikko on aina välimatka-asteikko. Esimerkiksi pituus ja rahan määrä ovat suhdeasteikkoja. 			
 " %}
 
@@ -310,7 +310,7 @@ content="
 
 {% include box.html  
 header="Lisätieto: Keskiarvoista" 
-extra="
+dropdown="
 Edellä määritelty keskiarvo on \"aritmeettinen keskiarvo\", mutta sana \"aritmeettinen\" jätetään pois, koska tässä moduulissa ei käsitellä muita keskiarvoja. Muita yleisesti käytettyjä keskiarvoja ovat \"geometrinen keskiarvo\" ja \"harmoninen keskiarvo\".						
 " %}
 
@@ -371,7 +371,7 @@ Aleksanteri on lähdössä Kemijärveltä maastopyörävaellukselle. Hän luokit
 				
 Nyt havintoyksikköinä ovat paikat ja havaintoarvoina numerot 1, 2 ja 3. Havaintoarvot muodostavat järjestysasteikon, mutta eivät välimatka-asteikkoa. Miksi?
 " 
-extra="
+dropdown="
 Esimerkiksi Savukosken kuntakeskus kuuluu luokkaan 2 ja Kemihaara luokkaan 3. Nyt Kemihaaran ja Savukosken kuntakeskuksen luokkien erotuksella  $3-2 =1$ ei ole järkevää tulkintaa.  Siitä ei esimerkiksi voi päätellä mitään Kemihaaran ja Savukosken kuntakeskuksen välisestä etäisyydestä. Myöskään luokkien keskiarvolla $\frac{2+3}{2}= \frac52$ ei ole järkevää tulkintaa. 							
 " %}		
 

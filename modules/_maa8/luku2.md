@@ -32,7 +32,7 @@ content="
 1. Ovatko joukot $\{\frac{2n}{n^2}: n= 1, \ldots, 4\}$ ja $\{\frac2{n-5}: n= 6, \ldots, 9\}$ samoja?
 1. Kuinka monta kaksialkioista jonoa voidaan joukon $\{a, b, c\}$ alkioista muodostaa?
 " 
-extra="
+dropdown="
 1. 
 1. 
 " %}
@@ -60,7 +60,7 @@ header="Yhden nopan heitto"
 content="
 Tarkastellaan yhden nopan heittoa, jolloin perusjoukkona on nopanheiton mahdolliset tulokset $E=\{1,2,3,4,5,6\}$. Laske todennäköisyys sille, että tuloksena on viitonen tai kuutonen.
 " 
-extra="
+dropdown="
 Lasketaan todennäköisyys sille, että tuloksena on viitonen tai kuutonen. Tätä varten merkitään $A=\{5,6\}$, jonka todennäköisyys on
 								$$
 								P(A)=\frac{n(A)}{n(E)}=\frac{2}{6}=\frac{1}{3}.
@@ -77,7 +77,7 @@ Heitetään kahta noppaa ja tutkitaan noppien silmälukujen summaa.
 1. Määritä perusjoukko.
 1. Laske todennäköisyys tapahtumalle \"silmälukujen summa on vähintään 10\".
 " 
-extra="
+dropdown="
 1. 
 1. 
 " %}					
@@ -121,7 +121,7 @@ Olkoot $A$ ja $B$ tapahtumia.
 1. $P(A\setminus B)=P(A)-P(A\cap B)$.
 1. $P(A\cup B)=P(A)+P(B)-P(A\cap B)$ (\"yhteenlaskukaava\").
 " 
-extra="
+dropdown="
 Todistamme tässä malliksi kohdat (a) ja (c).
 1. Olkoot $A$ ja $B$ erillisiä, eli $A \cap B = \emptyset$. Tällöin joukon $A \cup B$ alkioiden lukumäärä  $n(A\cup B)$ on $n(A) + n(B)$. Saamme
 									$$
@@ -150,7 +150,7 @@ Heitetään noppaa. Merkitään $A =\{5, 6\}$ ja $B=\{2,4,6\}$ eli $B$ vastaa ta
 1. $P(A\cap B)$
 1. $P(A\cup B)$
 " 
-extra="
+dropdown="
 1. $P(B)=\frac{n(B)}{n(E)}=\frac{3}{6}=\frac{1}{2}$.                                
 1. $A\cap B=\{6\}$ ja näin ollen $P(A\cap B)=\frac{n(A\cap B)}{n(E)}=\frac{1}{6}$.
 1. Yhteenlaskukaavan (e) perusteella
@@ -180,7 +180,7 @@ header="Korttien nosto ilman takaisinpanoa"
 content="
 Nostetaan korttipakasta kaksi korttia peräjälkeen ilman takaisinpanoa. Millä todennäköisyydellä jälkimmäinen on kuningas kun tiedämme ensimmäisen olleen kuningas?
 " 
-extra="
+dropdown="
 Perusjoukko koostuu järjestetyista pareista, joista ensimmäinen jäsen  vastaa ensimmäistä nostoa ja toinen jäsen toista nostoa. Pareja on  $52 \cdot 51 = 2652$ kappaletta. Merkitään että $A$  on niiden parien joukko, joissa ensimmäinen jäsen on \"kuningas\" ja $B$ on niiden parien joukko, joissa toinen jäsen on \"kuningas\".  Näin ollen $A$ vastaa tapahtumaa \"ensimmäinen kortti on kuningas\" ja $B$ vastaa tapahtumaa \"toinen kortti on kuningas\". Saamme
 $$
 P(A) = \frac{4 \cdot 51}{52 \cdot 51} =\frac1{13} \quad\text{ja} \quad  P(A \cap B) = \frac{4 \cdot 3}{52 \cdot 51}= \frac{1}{13 \cdot 17},
@@ -210,7 +210,7 @@ header="Pallojen nosto ilman takaisinpanoa"
 content="
 Pussissa on 40 palloa, jotka on numeroitu $1, \ldots, 40$. Nostetaan pussista kaksi palloa niin, että ensin nostettua palloa ei palautetta takaisin pussiin.  Mikä on tapahtuman \"tuloksena on 13 ja 40\" todennäköisyys?
 " 
-extra="
+dropdown="
 Ei ole väliä missä järjestyksessä pallot nostetaan. Tutkitaan ensin tapausta, jossa pallo 13 nousee ensin. Perusjoukko koostuu $40\cdot39=1560$ järjestetystä parista, joista ensimmäinen vastaa ensimmäistä nostoa ja toinen vastaa toista nostoa.
 
 Olkoot $A$ niiden paria joukko joiden ensimmäinen jäsen on  13 ja  $B$ niiden parien joukko joiden toinen jäsen on  40.  Saamme
@@ -237,7 +237,7 @@ header="Nopan heitto kaksi kertaa"
 content="
 Heitetään noppaa kaksi kertaa. Olkoon $A$ tapahtuma \"saadaan ensimmäisellä heitolla 6\" ja $B$ tapahtuma \"saadaan toisella heitolla 6\". Ovatko tapahtumat riippumattomia?
 " 
-extra="
+dropdown="
 Nyt $A$ on sellaisten järjestettyjen parien joukko, joissa ensimmäinen alkio on 6. Näitä on $1 \cdot 6 =6$ kappaletta. Joukko $B$ on sellaisten järjestettyjen parien joukko, joissa toinen alkio on 6. Näitä on $6 \cdot 1 =6$ kappaletta. Joukko $A\cap B$ koostuu yhdestä alkiosta $(6, 6)$. Perusjoukossa on $6 \cdot 6= 36$ alkiota. Tällöin
 $$
 P(A)P(B) = \frac{6}{36} \cdot \frac{6}{36} = \frac1{36} \quad\text{ja}\quad P(A\cap B) = \frac1{36}. 
@@ -251,7 +251,7 @@ header="Korttipakasta nosto"
 content="
 Nostetaan korttipakasta kortteja. Olkoot $A$ tapahtuma \"ensimmäinen kortti on ässä\" ja $B$ tapahtuma \"toinen kortti on kuningatar\". Vaikuttaako tapahtumien $A$ ja $B$ riippumattomuuteen se, että palautetaanko nostettu kortti pakkaan vai ei?
 " 
-extra="
+dropdown="
 xxx
 " %}
 
@@ -261,7 +261,7 @@ header="Nopan heitto viisi kertaa"
 content="
 Heitetään noppaa viisi kertaa peräkkäin. Kumpi tuloksista $1, 1, 1, 1, 1$ vai $4, 3, 1, 5, 1$ on todennäköisempi?
 " 
-extra="
+dropdown="
 xxx
 " %}
 
@@ -274,7 +274,7 @@ content="
 Olkoot $A$ ja $B$ tapahtumia ja $P(B)>0$. Tällöin $A$ ja $B$ ovat riippumattomia täsmälleen silloin, kun $P(A\mid B)=P(A)$.
 " 
 
-extra="
+dropdown="
 Jos oletetaan, että $A$ ja $B$ ovat riippumattomia, niin
 $$
 P(A\mid B)=\frac{P(A\cap B)}{P(B)}=\frac{P(A)P(B)}{P(A)}=P(A).
@@ -294,7 +294,7 @@ header="Riippumattomuus"
 content="
 Pussissa on 40 palloa, jotka on numeroitu $1, \ldots, 40$. Nostetaan pussista kaksi palloa niin, että ensin nostettu pallo palautetaan takaisin pussiin ja vasta sitten nostetaan toinen pallo.  Mikä on tapahtuman \"tuloksena on 13 ja 40\" todennäköisyys?				
 " 
-extra="
+dropdown="
 Ei ole väliä missä järjestyksessä pallot nostetaan. Tutkitaan ensin tapausta, jossa pallo 13 nousee ensin. Koska nostettu pallo palautetaan pussiin, niin tapahtumat $A=$ \"ensimmäisen noston tulos on 13\" ja  $B=$ \"toisen noston tulos on 40\" ovat riippumattomia.  Saamme
 $$
 P(A \cap B) = P(A) P(B) = \frac1{40} \cdot \frac1{40} = \frac1{1600}.
@@ -308,7 +308,7 @@ header="Yhden nopan heitto"
 content="
 Heitetään noppaa kerran. Merkitään $A =\{5, 6\}$ ja $B=\{2,4,6\}$. Ovatko tapahtumat erillisiä tai riippumattomia?
 " 
-extra="
+dropdown="
 Koska $A\cap B=\{6\}\neq\emptyset$, niin tapahtumat $A$ ja $B$ eivät ole erillisiä. Sen sijaan ne ovat riippumattomat, sillä
 $$
 P(A\cap B)=\frac{1}{6}=\frac{1}{3}\cdot\frac{1}{2}=P(A)P(B).
@@ -351,7 +351,7 @@ header="Permutaatiot"
 content="
 Kuinka monta permutaatiota on joukolla $A=\{a, b, c\}$?
 " 
-extra="
+dropdown="
 Joukon $A=\{a, b, c\}$ permutaatioita ovat jonot $(a, b, c)$, $(a, c, b)$, $(b, a, c)$, $(b, c, a)$, $(c, a, b)$ ja $(c, b, a)$. Havaitaan, että kolmialkioisella joukolla $A$ on 6 erilaista permutaatiota.
 " %}
 
@@ -361,7 +361,7 @@ header="Permutaatiot"
 content="
 Edellisessä tehtävässä havaittiin, että kolmialkioisella joukolla on 6 erilaista permutaatiota. Jos joukossa on $n$ alkiota, niin kuinka monta erilaista permutaatiota sillä on? Voit ensin tarkastella esimerkiksi nelialkioisen joukon permutaatioita ja yrittää keksiä yleisen säännön, jolla permutaatioiden lukumäärän voi laskea.
 " 
-extra="
+dropdown="
 xxxxx
 " %}
 
@@ -383,7 +383,7 @@ Olkoon $A$ joukko, jossa on $n$ alkiota.
 1. Joukon $A$ permutaatioiden lukumäärä on $n!=1\cdot 2\cdot 3\cdots n$.
 1. Joukon $A$ $k$-kombinaatioiden lukumäärä on $\displaystyle\binom{n}{k}=\frac{n!}{k!(n-k)!}$.
 " 
-extra="
+dropdown="
 1. Aloitetaan $n$ alkion asettaminen jonoon, johon ensimmäiseksi jäseneksi on $n$ vaihtoehtoa. Tämän jälkeen toiseksi jäseneksi jonossa on $n-1$ vaihtoehtoa, ja näin jatkamalla seuraavaksi jonon jäseneksi on aina yksi vaihtoehto vähemmän kuin edelliseksi jäseneksi oli. Jonon viimeiseksi jäseneksi on jäljellä enää yksi vaihtoehto. Näin ollen kertomalla vaihtoehtojen lukumäärät keskenään nähdään, että $n$-alkioisella joukolla on $n\cdot(n-1)\cdots 1=n!$ permutaatiota.                            
 1. Vastaavasti kuin permutaatioiden lukumäärä voidaan päätellä, että $n$ alkiosta voidaan valita $k$ alkiota jonoon $n\cdot(n-1)\cdots(n-k+1)$ tavalla. Tässä samojen alkioiden eri järjestykset ovat eri jonoja, joten $k$-kombinaatioiden lukumäärä saadaan tästä jakamalla luvulla $k!$, joka on eri tapojen lukumäärä järjestää $k$ alkiota jonoon. Saadaan siis, että $n$-alkioisen joukon $k$-kombinaatioiden lukumäärä on
 $$
@@ -403,7 +403,7 @@ header="Lotto"
 content="
 Lotossa on 40 numeroa, joista arvotaan 7 numeroa. Monta erillaista lottoriviä on olemassa?
 " 
-extra="
+dropdown="
 Erilaisia 7 numeron lottorivejä on
 $$
 \binom{40}{7}=\frac{40!}{7!33!}=\frac{93\,963\,542\,400}{5\,040}=18\,643\,560.
@@ -416,7 +416,7 @@ header="Lotto"
 content="
 Raili miettii lottoriviään seuraavaan arvontaan. Kuudessa edellisessä arvonnassa lottorivissä on ollut luku 9. Kannattaako Railin valita luku 9 omaan riviinsä? 
 " 
-extra="
+dropdown="
 xxxxxx
 " %}
 
@@ -426,7 +426,7 @@ header="Yhdistys"
 content="
 Yhdistyksen kokouksessa on 60 osallistujaa. Kuinka monella tavalla heistä voidaan valita puheenjohtaja, varapuheenjohtaja ja sihteeri? Kuinka monella tavalla valitsematta jääneistä voidaan valita 2 toiminnantarkastajaa?  
 " 
-extra="
+dropdown="
 xxxxx
 " %}
 
@@ -445,7 +445,7 @@ header="Erikoinen noppa"
 content='
 Jussilla on noppa, jonka silmäluvut ovat 1, 1, 1, 2, 3, 4. Jussi heittää noppaa kaksi kertaa. Millä todennäköisyydellä tuloksena on luvut 1 ja 2?
 ' 
-extra='
+dropdown='
 Lasketaan ensin todennäköisyys tapahtumalle "ensimmäisen heiton tulos on 1 ja toisen tulos on 2": 
 								$$\frac36 \cdot \frac16 = \frac3{36}$$
 Vastaavasti tapahtuman "ensimmäisen heiton tulos on 2 ja toisen tulos on 1" todennäköisyys on 
@@ -459,7 +459,7 @@ header="Erikoinen noppa"
 content='
 Kuusisivuisen nopan kunkin sivun silmäluvuksi voidaan valita mikä tahansa luvuista $1,\ldots,6$. Miten silmäluvut pitää valita, jotta kahdella heitolla tapahtuman "tuloksena ovat 1 ja 2" todennäköisyys on $\frac49$?
 ' 
-extra='
+dropdown='
 1, 1, 1, 1, 2, 2 tai toisin päin.
 ' %}
 
@@ -472,7 +472,7 @@ content='
 Kuvassa on tavallinen tikkataulu, jonka halkaisija on 30 cm. Millä todennäköisyydellä 3 tikalla saadaan kaksi ykköstä ja yksi kahdeksikko?
 ![Tikkataulu, jonka halkaisija on 30 cm](/images/tikkataulu.png "Tikkataulu, jonka halkaisija on 30 cm.")
 ' 
-extra="
+dropdown="
 zzzzz
 " %}
 
@@ -485,6 +485,6 @@ Nikolai ostaa onnenpyöräpelin, jossa kaikki sektorit ovat yhtä suuria, kuten 
 ![Ikean onnenpyöräpeli](/images/tikkataulu.png "Ikean onnenpyöräpeli")
 _Ikean [onnenpyöräpeli](https://www.ikea.com/fi/fi/p/lustigt-onnenpyoeraepeli-30387038/)_ (luettu 23.10.2020).
 ' 
-extra="
+dropdown="
 zzzzz
 " %}

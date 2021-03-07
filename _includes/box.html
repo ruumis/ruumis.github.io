@@ -21,16 +21,16 @@
 {{include.content}}
 </div>  
 {% endif %}
-{% if include.extra %}
-<button type="button" class="collapsible box-extra-button">
+{% if include.dropdown %}
+<button type="button" class="collapsible box-dropdown-button">
 {% if include.type == "exercise" %}
 Vastaus
 {% elsif include.type == "theorem" %}
 Todistus
 {% endif %}
 </button>
-<div class="box-extra-content" markdown="1">
-{{include.extra}} 
+<div class="box-dropdown-content" markdown="1">
+{{include.dropdown}} 
 </div>
 {% endif %}
 </div>

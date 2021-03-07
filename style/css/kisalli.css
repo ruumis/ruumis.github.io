@@ -108,7 +108,7 @@ background-color: #FBE127;
 }
 
 
-.box-extra-button {
+.box-dropdown-button {
   background-color: white;
   color: black;
   padding: 18px;
@@ -128,12 +128,18 @@ background-color: #FBE127;
 
 /* Style the collapsible content. Note: hidden by default */
 .box-content,
-.box-extra-content {
+.box-dropdown-content {
   padding: 0px 18px 18px 18px;
   display: none;
   overflow: hidden;
 }
-.box-extra-content {
+
+.theorem .box-content,
+.definition .box-content, {
+  display: block;
+}
+
+.box-dropdown-content {
   background-color: white;
 }
 
