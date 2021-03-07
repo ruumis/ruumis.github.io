@@ -39,12 +39,8 @@ padding: 35px;
 margin: -15px;
 }
 
-.box-header {
-	counter-increment: box-counter 1;
-}
-
 .box-button {
-		background-color: #eee;
+		background-color: #ebebeb;
 		color: #313131;
 		padding: 18px;
 		width: 100%;
@@ -66,13 +62,9 @@ background-color: #ECF5D4;
 background-color: #FBE127;
 }
 
-.exercise .box-button {
-  counter-increment: exercise-counter 1;
-}
-
 .exercise { 
     background-color: white;
-	border: 1px dashed #313131;
+	border: 1px dashed ##b4b4b4;
 }
 .definition {
     background-color: #f2ffcc;
@@ -143,9 +135,12 @@ background-color: #FBE127;
   background-color: white;
 }
 
+.exercise-number {
+	counter-increment: exercise-counter 1;
+}
 .exercise-number::after {
   content: counter(exercise-counter); /* Apply counter before children's content. */
-  color: white;
+  color: 313131;
 }
 
 .exercise ol {
