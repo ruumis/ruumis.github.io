@@ -197,6 +197,31 @@ dropdown="
 
 Summafrekvenssi ja suhteellinen summafrekvenssi???	
 
+{% include box.html  
+type="exercise"
+header="Havaintoyksikkö ja havaintoarvo" 
+content="
+Mikä seuraavissa tapauksissa on havaintoyksikkö ja mikä on havaintoarvo? Huomaa, että kysymykseen ei ole olemassa vain yhtä oikeata vastausta.
+1. Puolueiden kannatusmittaus.
+1. Kuukausittainen kuluttajahintaindeksi.
+1. Viime vuonna tapahtuneet liikenneonnettomuudet.
+1. Suomen kuntien väkiluku. 
+" 
+dropdown="
+1. Havaintoyksikkö: kyselyyn osallistuja henkilö. Havaintoarvo: puolue.
+1.  Havaintoyksikkö: kuukausi (ja vuosi). Havaintoarvo: indeksin arvo.
+1.   Havaintoyksikkö: yksittäinen onnettomuus. Havaintoarvo: loukkaantuneiden lukumäärä.
+1.  Havaintoyksikkö: kunta. Havaintoarvo: väkiluku.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Frekvenssi ja suhteellinen frenvenssi" 
+content="
+Tilastokeskuksen [Paavo-tietokannasta](https://www.stat.fi/tup/paavo/index.html) löytyy tietoa postinumeroittain. Tutkitaan 18 vuotta täyttäneiden koulutusastetta. Etsi kahden [postinumeroalueen koulutusastetiedot](http://pxnet2.stat.fi/PXWeb/pxweb/fi/Postinumeroalueittainen\_avoin\_tieto/Postinumeroalueittainen\_avoin\_tieto\_\_2020/paavo\_pxt\_12ez.px/) (perusaste, ylioppilastutkinto, ammatillinen tutkinto, alempi korkeakoulututkinto, ylempi korkeakoulututkinto) kaikilta 18 vuotta täyttäneiltä ja laske suhteelliset frekvenssit.
+" 
+dropdown="" %}
+
 ## Keskiluvut
 
 Aineistoja tutkittaessa mielenkiinnon kohteena on usein löytää aineiston "tyypillisin" tai "keskimmäisin" tapaus. Tätä kuvaamaan käytetään erilaisia keskilukuja. Niiden määrittämisen mielekkyys riippuu havaintoarvojen luonteesta, eli siitä mitä on mielekästä kutsua "tyypilliseksi" kyseisessä aineistossa.
@@ -259,14 +284,13 @@ Kirjoittamalla lapsiperhe-esimerkissä kaikki havaintoarvot eli kaikkien perheid
 
 $${\tiny
 					
-						\underbrace{1, \ldots, 1}_{241\,709\text{kpl}}, \underbrace{2, \ldots, 2}_{220\,116\text{kpl}},
-						\underbrace{3, \ldots, 3}_{75\,326\text{kpl}}, \underbrace{4, \ldots, 4}_{18\,409\text{kpl}},
-						\underbrace{5, \ldots, 5}_{5\,493\text{kpl}}, \underbrace{6, \ldots, 6}_{2\,289\text{kpl}},
-						\underbrace{7, \ldots, 7}_{1\,235\text{kpl}}, \underbrace{8, \ldots, 8}_{751\text{kpl}},
-						\underbrace{9, \ldots, 9}_{476\text{kpl}}, \underbrace{10, \ldots, 10}_{262\text{kpl}},
-						\underbrace{11, \ldots, 11}_{117\text{kpl}}, \underbrace{12, \ldots, 12}_{41\text{kpl}},
-						\underbrace{13, \ldots, 13}_{12\text{kpl}}, 14, 14, 14, 16, 16, 16.
-						
+\underbrace{1, \ldots, 1}_{241\,709\text{kpl}}, \underbrace{2, \ldots, 2}_{220\,116\text{kpl}},
+\underbrace{3, \ldots, 3}_{75\,326\text{kpl}}, \underbrace{4, \ldots, 4}_{18\,409\text{kpl}},
+\underbrace{5, \ldots, 5}_{5\,493\text{kpl}}, \underbrace{6, \ldots, 6}_{2\,289\text{kpl}},
+\underbrace{7, \ldots, 7}_{1\,235\text{kpl}}, \underbrace{8, \ldots, 8}_{751\text{kpl}},
+\underbrace{9, \ldots, 9}_{476\text{kpl}}, \underbrace{10, \ldots, 10}_{262\text{kpl}},
+\underbrace{11, \ldots, 11}_{117\text{kpl}}, \underbrace{12, \ldots, 12}_{41\text{kpl}},
+\underbrace{13, \ldots, 13}_{12\text{kpl}}, 14, 14, 14, 16, 16, 16.					
 }$$
 
 Tässä on yhteensä 566242 lukua, joka on parillinen määrä. Näin ollen keskimmäistä lukua ei ole. Ensimmäisen puolikkaan viimeinen luku on 2, kuten myös toisen puolikkaan ensimmäinen luku. Mediaani on siis 2.
@@ -315,19 +339,19 @@ Edellä määritelty keskiarvo on \"aritmeettinen keskiarvo\", mutta sana \"arit
 " %}
 
 Tutkitaan lapsiperhe-esimerkin lasten lukumäärän (aritmeettista) keskiarvoa. Lasketaan lasten lukumäärä kertomalla ensin lasten lukumäärät niiden frekvensseillä ja laskemalla sitten saadut luvut yhteen: 
-					$$
-						\begin{split}
-						&241\,709 \cdot 1 + 220\,116 \cdot 2 + 75\,326 \cdot 3 + 18\,409 \cdot 4 + 5\,493 \cdot 5 + 2\,289 \cdot 6
-						+  1\,235 \cdot 7 + 752 \cdot 8\\
-						&\quad + 476 \cdot 9
-						+ 262 \cdot 10 + 117 \cdot 11 + 41 \cdot 12 + 12 \cdot 13 + 3 \cdot 14 +0 \cdot 15 + 3 \cdot 16
-						=1\,046\,336
-						\end{split}
-					$$
-					ja jaetaan se perheiden lukumäärällä
-					$$
-						\frac{1\,046\,336}{566\,242}\approx 1{,}85.
-					$$
+$$
+\begin{split}
+	&241\,709 \cdot 1 + 220\,116 \cdot 2 + 75\,326 \cdot 3 + 18\,409 \cdot 4 + 5\,493 \cdot 5 + 2\,289 \cdot 6
+	+  1\,235 \cdot 7 + 752 \cdot 8\\
+	&\quad + 476 \cdot 9
+	+ 262 \cdot 10 + 117 \cdot 11 + 41 \cdot 12 + 12 \cdot 13 + 3 \cdot 14 +0 \cdot 15 + 3 \cdot 16
+	=1\,046\,336
+\end{split}
+$$
+ja jaetaan se perheiden lukumäärällä
+$$
+\frac{1\,046\,336}{566\,242}\approx 1{,}85.
+$$
 Näin ollen lapsiperheiden lasten lukumäärän keskiarvo on noin 1,85. 
 
 {% include box.html  
@@ -386,13 +410,78 @@ Lomakkeissa kysytään usein koulutusta. Mitkä keskiluvut voidaan määrittää
 
 {% include box.html  
 type="exercise"
-header="Moodi, mediaani ja keskiarvo" 
+header="Luokitteluasteikot" 
 content="
 Keksi esimerkkejä havaintoarvioista, joille voit soveltaa  
 1. moodia, mutta et mediaania,
 1. moodia ja mediaania, mutta et keskiarvoa,
 1. moodia, mediaania ja keskiarvoa?
 " %}
+
+{% include box.html  
+type="exercise"
+header="Asteikot" 
+content="
+Tutki [THL:n ekaluokkalaisen vanhemmille tarkoitettua esitietolomaketta](https://www.thl.fi/attachments/kasvunkumppanit/kouluterveydenhuolto/THL\_1lk\_vanhemmille\_FI\_lomake.pdf). Tehtävässä voidaan ajatella että jokainen ekaluokkalainen on havaintoyksikkö ja mikä tahansa kysymyksen vastaus voidaan valita havaintoarvoksi. Etsi kysymys, jonka vastaukset
+1. noudattavat luokitteluasteikkoa mutta eivät järjestysasteikkoa,
+1. noudattavat järjestysasteikkoa mutta eivät välimatka-asteikkoa,
+1. noudattavat välimatka-asteikkoa
+" 
+dropdown='
+1. Esimerkiksi "Lapsi asuu", \[molempien vanhempien kanssa/äidin kanssa/isän kanssa/muu järjestely\]
+1. Esimerkiksi "Millaiseksi arvioitte lapsenne nykyisen terveydentilan?", \[hyvä/keskinkertainen/huono\]
+1. Esimerkiksi "Lapsemme nukkuu arkisin ____ tuntia."						
+' %}
+
+{% include box.html  
+type="exercise"
+header="Eri asteikoita" 
+content="
+Mitkä seuraavista noudattavat järjestysasteikkoa, välimatka-asteikkoa tai ei kumpaakaan?
+1. Vuorokauden keskilämpötila.
+1. Koiran sukupuoli.
+1. Judossa saavutetun vyön väri (valkoinen, keltainen, vihreä, sininen, ruskea ja musta).
+1. Sävelasteikko.
+1. Käytetyn auton odometri (kuljettu kokonaismatka).
+" %}
+
+{% include box.html  
+type="exercise"
+header="Keskiluvut" 
+content="
+Oheisessa taulukossa on kevään 2020 pitkän matematiikan arvosanojen lukumäärät. (Lähde: YTL)
+| L 	| E 	| M 	| C 	| B 	| A 	| I 	|
+| --- 	| ---	| ---	| ---	| ---	| --- 	| ---	|
+|852  	| 2397	| 3144	| 3331	| 2245	| 983	| 335	|
+
+1. Mitkä keskiluvut (moodi, mediaani, keskiarvo) aineistosta voi määrittä?
+1. Määritä a-kohdan keskiluvut.
+" %}
+
+{% include box.html  
+type="exercise"
+header="Keskiluvut" 
+content="
+Taulukosta puuttuu yksi kokonaisluku.
+|$x$	| 0	| 1	| 2	| 3	| 4	| 5	|
+|$f$	| 9	| 3	| 4	| 	| 6 | 8	| 
+
+Mitä pystyt päättelemään puuttuvasta luvusta, jos tiedot että  muuttujan $x$
+
+1. moodi on $3$?
+1. mediaani on $2$?
+1. keskiarvo on $\frac83$?
+" 
+dropdown='
+1. Luku on aidosti suurempi kuin $9$.
+1. Lukua on $0$ tai $1$.
+1. Merkitään puuttuvaa lukua muuttujalla $z$. Yhtälö
+$$
+\frac{9\cdot 0 + 3 \cdot 1 + 4 \cdot 2 +  z \cdot 3 + 6 \cdot 4 + 8 \cdot 5}{7+3+4+z+6+8}=\frac83,
+$$ 
+josta $z=5$.				
+' %}
+
 
 ## Keskihajonta
 

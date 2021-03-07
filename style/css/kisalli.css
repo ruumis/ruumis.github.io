@@ -44,9 +44,8 @@ margin: -15px;
 }
 
 .box-button {
-        counter-increment: exercise-counter 1;
-		background-color: #e4c2c1;
-		color: white;
+		background-color: #eee;
+		color: #313131;
 		padding: 18px;
 		width: 100%;
 		border: none;
@@ -68,11 +67,12 @@ background-color: #FBE127;
 }
 
 .exercise .box-button {
-  background-color: #f4a4a4;
+  counter-increment: exercise-counter 1;
 }
 
 .exercise { 
-    background-color: #f8c8c6;
+    background-color: white;
+	border: 1px dashed #313131;
 }
 .definition {
     background-color: #f2ffcc;
@@ -135,7 +135,7 @@ background-color: #FBE127;
 }
 
 .theorem .box-content,
-.definition .box-content, {
+.definition .box-content {
   display: block;
 }
 
