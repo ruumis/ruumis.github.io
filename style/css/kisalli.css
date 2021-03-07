@@ -51,7 +51,7 @@ margin: -15px;
 }
 
 .box {
-	background-color: #fef2f2;
+	background-color: #f7f7f7;
 }
 	
 .objective {
@@ -62,10 +62,6 @@ background-color: #ECF5D4;
 background-color: #FBE127;
 }
 
-.exercise { 
-    background-color: white;
-	border: 1px dashed ##b4b4b4;
-}
 .definition {
     background-color: #f2ffcc;
 }
