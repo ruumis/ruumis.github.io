@@ -11,7 +11,7 @@
 {% else %}
 	<button type="button" class="collapsible box-button">
 	{% if include.type == "exercise" %}
-		<button type="button" class="collapsible box-button"><span class="exercise-number">Tehtävä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
+		<span class="exercise-number">Tehtävä {% if page.chapter %}{{ page.chapter }}.{% endif %}</span>: 
 	{% endif %}
 	{{include.header}}</button>
 {% endif %}
