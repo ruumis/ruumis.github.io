@@ -435,3 +435,20 @@ $$
 \text{nPr}(9, 4) =  9\cdot 8 \cdot 7 \cdot 6=3024.
 $$
 
+## Klassisen todennäköisyyden laajennus 
+
+Klassisessa todennäköisyydessä kaikki alkeistapahtumat ovat yhtä todennäköisiä. Tutustumme esimerkkitehtävin tapahtumiin, joissa alkeistatapahtumien todennäköisyydet ovat eri suuria, mutta tilanteiden analysoinnissa voi silti käyttää klassisesta todennäköisyydestä tuttuja menetelmiä.
+               
+{% include box.html  
+type="exercise"
+header="Erikoinen noppa" 
+content='
+Jussilla on noppa, jonka silmäluvut ovat 1, 1, 1, 2, 3, 4. Jussi heittää noppaa kaksi kertaa. Millä todennäköisyydellä tuloksena on luvut 1 ja 2?
+" 
+extra="
+Lasketaan ensin todennäköisyys tapahtumalle "ensimmäisen heiton tulos on 1 ja toisen tulos on 2": 
+								$$\frac36 \cdot \frac16 = \frac3{36}$$
+Vastaavasti tapahtuman "ensimmäisen heiton tulos on 2 ja toisen tulos on 1" todennäköisyys on 
+								$$\frac16 \cdot \frac36 = \frac3{36}$$.
+Kysytty todennäköisyys on täten $\frac3{36} + \frac3{36} = \frac16$.
+' %}
