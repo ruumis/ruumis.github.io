@@ -275,8 +275,8 @@ content="
 " %}		
 
 {% include box.html  
-header="LISÄTIETO:" 
-dropdown="
+header="Lisätieto" 
+content="
 Välimatka-asteikolla parillisessa tapauksessa  mediaani voi  vaihtoehtoisesti olla keskimmäisten lukujen keskiarvon.
 " %}	
 
@@ -319,7 +319,7 @@ Esimerkiksi mineraalien luokittelussa ja tunnistamisessa käytetään kovuutta k
 
 {% include box.html  
 header="Lisätieto: Suhdeasteikko" 
-dropdown="
+content="
 Havaintoarvot noudattavat *suhdeasteikkoa*, jos arvojen erotus on mielekkäästi tulkittavissa ja muuttujan arvoilla on jokin absoluuttinen nollakohta. Suhdeasteikko on aina välimatka-asteikko. Esimerkiksi pituus ja rahan määrä ovat suhdeasteikkoja. 			
 " %}
 
@@ -334,7 +334,7 @@ content="
 
 {% include box.html  
 header="Lisätieto: Keskiarvoista" 
-dropdown="
+content="
 Edellä määritelty keskiarvo on \"aritmeettinen keskiarvo\", mutta sana \"aritmeettinen\" jätetään pois, koska tässä moduulissa ei käsitellä muita keskiarvoja. Muita yleisesti käytettyjä keskiarvoja ovat \"geometrinen keskiarvo\" ja \"harmoninen keskiarvo\".						
 " %}
 
