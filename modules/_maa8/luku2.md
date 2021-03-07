@@ -444,8 +444,22 @@ type="exercise"
 header="Erikoinen noppa" 
 content='
 Jussilla on noppa, jonka silmäluvut ovat 1, 1, 1, 2, 3, 4. Jussi heittää noppaa kaksi kertaa. Millä todennäköisyydellä tuloksena on luvut 1 ja 2?
-" 
-extra="
+' 
+extra='
+Lasketaan ensin todennäköisyys tapahtumalle "ensimmäisen heiton tulos on 1 ja toisen tulos on 2": 
+								$$\frac36 \cdot \frac16 = \frac3{36}$$
+Vastaavasti tapahtuman "ensimmäisen heiton tulos on 2 ja toisen tulos on 1" todennäköisyys on 
+								$$\frac16 \cdot \frac36 = \frac3{36}$$.
+Kysytty todennäköisyys on täten $\frac3{36} + \frac3{36} = \frac16$.
+' %}
+
+{% include box.html  
+type="exercise"
+header="Erikoinen noppa" 
+content='
+Kuusisivuisen nopan kunkin sivun silmäluvuksi voidaan valita mikä tahansa luvuista $1,\ldots,6$. Miten silmäluvut pitää valita, jotta kahdella heitolla tapahtuman "tuloksena ovat 1 ja 2" todennäköisyys on $\frac49$?
+' 
+extra='
 Lasketaan ensin todennäköisyys tapahtumalle "ensimmäisen heiton tulos on 1 ja toisen tulos on 2": 
 								$$\frac36 \cdot \frac16 = \frac3{36}$$
 Vastaavasti tapahtuman "ensimmäisen heiton tulos on 2 ja toisen tulos on 1" todennäköisyys on 
