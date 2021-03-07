@@ -136,7 +136,7 @@ background-color: #FBE127;
   background-color: white;
 }
 
-.exercise-number {
+.exercise {
 	counter-increment: exercise-counter 1;
 }
 .exercise-number::after {
