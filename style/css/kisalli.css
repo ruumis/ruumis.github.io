@@ -57,6 +57,7 @@ margin: -15px;
 
 .box {
 	background-color: #f7f7f7;
+	margin-bottom: 5px;
 }
 	
 .objective {
@@ -83,7 +84,7 @@ background-color: #FBE127;
     background-color: #286fb4; 
 }
 
-.box-header {
+.post-content .box-header {
     font-weight: 100;
     text-transform: uppercase;
     color: white;
@@ -93,6 +94,7 @@ background-color: #FBE127;
     text-align: left;
     outline: none;
     font-size: 15px;
+	margin: 0px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
