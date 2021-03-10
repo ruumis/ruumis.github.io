@@ -469,9 +469,9 @@ Olkoot $x_1, \ldots, x_k$ havaintoarvot, jotka ovat suuruusjärjestyksessä. Olk
 
 $$
 S_j =\sum_{i=1}^j f_i
-\] 
+$$ 
 ja *suhteellinen summafrekvenssi* on funktio
-\[
+$$
 \Sa_j=\sum_{i=1}^j f_i\%.
 $$
 Molemmissa funktioissa $j \in \{1, 2, 3, \ldots, k\}$.
